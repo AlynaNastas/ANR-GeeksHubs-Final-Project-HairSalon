@@ -1,13 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
-import { InputText } from '../../components/Input/InputPage';
+import { InputPage } from '../../components/Input/InputPage';
 import { useEffect, useState } from 'react';
 import { validation } from '../../helpers/Validations';
 import { logMe } from '../../services/apiCalls';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { login, userData } from '../userSlice';
+import { useDispatch } from 'react-redux';
 import { decodeToken } from "react-jwt";
 
 
@@ -17,7 +16,7 @@ import { decodeToken } from "react-jwt";
 
 export const Login = () => {
 
-    const credentialsRdx = useSelector(userData);
+
 
     const navigate = useNavigate();
 
@@ -168,7 +167,7 @@ export const Login = () => {
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
 
-                            <InputText
+                            <InputPage
                                 className={'InputBasic'}
                                 type={"email"}
                                 name={'email'}
@@ -180,12 +179,12 @@ export const Login = () => {
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>
-                            <div className='RedError'>{credencialsError.emailError}</div>
+                            <div className='RedError'>{credentialsError.emailError}</div>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <InputText
+                            <InputPage
                                 className={'InputBasic'}
                                 type={'password'}
                                 name={'password'}
