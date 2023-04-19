@@ -23,31 +23,32 @@ export const NavbarPage = () => {
         <Nav.Link as={Link} to="/home">
                 Home
         </Nav.Link>
-            <NavDropdown title="Dental treatments" id="basic-nav-dropdown">
+            <NavDropdown title="About" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
-                    About
+                    Salon
                 </NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
-                        Salon
+                        Team
                 </NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">
                         Treatments
                 </NavDropdown.Item>
-            <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">
-                        Team
+                        Services
                 </NavDropdown.Item>
             <NavDropdown.Item href="#action/3.5">
-                        News
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.6">
                         Our History
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">
+                <NavDropdown.Item href="#action/3.6">
+                        News
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.7">
+                        Reviews
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.7">
                         Contact
                 </NavDropdown.Item>
             <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Reviews</NavDropdown.Item>
     </NavDropdown>
             </>
         </Nav>
