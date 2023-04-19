@@ -1,11 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
-import { InputText } from '../../components/input/InputText';
+import { InputText } from '../../components/Input/InputPage';
 import { useEffect, useState } from 'react';
-import './Login.css';
 import { validation } from '../../helpers/Validations';
-import { logMe } from '../../services/apiCall';
+import { logMe } from '../../services/apiCalls';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, userData } from '../userSlice';
