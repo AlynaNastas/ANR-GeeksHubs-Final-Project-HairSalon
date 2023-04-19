@@ -17,7 +17,7 @@ export const FooterPage = () => {
         <Col className='margin mt-2'>
             <h4>CONTACT</h4>
             <p> <i className="bi bi-telephone"></i> +44 111 222 444 </p>
-            <p> <i className="bi bi-envelope-open-heart"></i> info@salonbeauty.com </p>
+            <p> <i className="bi bi-envelope-open-heart"></i> salon@art&beauty.com </p>
             </Col>
         <Col className='margin mt-2'>
                 <h4>Opening Hours</h4>

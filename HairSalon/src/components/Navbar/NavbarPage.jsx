@@ -11,7 +11,7 @@ export const NavbarPage = () => {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
     <Container>
-        <Navbar.Brand as={Link} to="/home">Artistic Space AN</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto"> 
@@ -22,7 +22,7 @@ export const NavbarPage = () => {
             <Nav.Link as={Link} to="/login">
                 Login
             </Nav.Link>
-        <Nav.Link as={Link} to="/home">
+        <Nav.Link as={Link} to="/">
                 Home
         </Nav.Link>
             <NavDropdown title="About" id="basic-nav-dropdown">
