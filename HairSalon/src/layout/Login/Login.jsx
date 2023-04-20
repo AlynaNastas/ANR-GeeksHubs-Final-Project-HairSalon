@@ -83,7 +83,6 @@ export const Login = () => {
             }
         }
 
-
         setLoginAct(true);
     });
 
@@ -121,15 +120,13 @@ export const Login = () => {
     };
 
 
-
-
     const logmee = () => {
 
         logMe(credentials)
             .then(
                 respuesta => {
                     let decodificado = decodeToken(respuesta.data)
-                    console.log(respuesta.data, 'esto es hola')
+                    console.log(respuesta.data, 'hey hey')
                     let datosBackend = {
                         token: respuesta.data,
                         usuario: decodificado
@@ -152,57 +149,56 @@ export const Login = () => {
             .catch(error => console.log(error))
 
     };
-
-
-
     return (
+        <div className="logDesign">
+            {welcome !== "" ? (
+                <div>{welcome}</div>
+            ) : (
 
+                <div className='Main'>
+                    <Container className='body1'>
 
+                        <div>
+                            <Form>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Label>Email address</Form.Label>
 
-        <div className='Regi'>
-            <Container className='boody'>
+                                    <InputPage
+                                        className={'InputBasic'}
+                                        type={"email"}
+                                        name={'email'}
+                                        placeholder={"Enter email"}
+                                        changeFunction={(e) => inputHandler(e)}
+                                        blurFunction={(e) => checkError(e)} />
 
-                <div> <img className="First slide" />
-                    <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
+                                    <Form.Text className="text-muted">
+                                        We'll never share your email with anyone else.
+                                    </Form.Text>
+                                    <div className='RedError'>{credentialsError.emailError}</div>
+                                </Form.Group>
 
-                            <InputPage
-                                className={'InputBasic'}
-                                type={"email"}
-                                name={'email'}
-                                placeholder={"Enter email"}
-                                changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
-
-
-                            <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
-                            </Form.Text>
-                            <div className='RedError'>{credentialsError.emailError}</div>
-                        </Form.Group>
-
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <InputPage
-                                className={'InputBasic'}
-                                type={'password'}
-                                name={'password'}
-                                placeholder={'Introduce your password'}
-                                changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
-                            <div className='RedError'>{credentialsError.passwordError} </div>
-                        </Form.Group>
-                        <div className='button2'>
-                            <Button
-                                onClick={loginAct ? () => { logmee(); } : () => { }} variant="primary">
-                                Submit
-                            </Button>
+                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                    <Form.Label>Password</Form.Label>
+                                    <InputPage
+                                        className={'InputBasic'}
+                                        type={'password'}
+                                        name={'password'}
+                                        placeholder={'Introduce your password'}
+                                        changeFunction={(e) => inputHandler(e)}
+                                        blurFunction={(e) => checkError(e)} />
+                                    <div className='RedError'>{credentialsError.passwordError} </div>
+                                </Form.Group>
+                                <div className='button2'>
+                                    <Button
+                                        onClick={loginAct ? () => { logmee(); } : () => { }} variant="primary">
+                                        Submit
+                                    </Button>
+                                </div>
+                            </Form>
                         </div>
-                    </Form>
+                    </Container>
                 </div>
-            </Container>
+            )}
         </div>
-
     );
-}
+};
