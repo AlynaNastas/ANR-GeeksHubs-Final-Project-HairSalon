@@ -6,9 +6,10 @@ import { useEffect, useState } from 'react';
 import { validation } from '../../helpers/Validations';
 import { logMe } from '../../services/apiCalls';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { login, userData } from '../../userSlice';
 import { decodeToken } from "react-jwt";
-
+import './Login.css';
 
 
 
@@ -16,12 +17,11 @@ import { decodeToken } from "react-jwt";
 
 export const Login = () => {
 
-
+    const credentialsRdx = useSelector(userData);
 
     const navigate = useNavigate();
 
     const dispatch = useDispatch();
-
 
 
     const [credentials, setCredentials] = useState({
@@ -69,8 +69,8 @@ export const Login = () => {
             }
         }
 
-        for (let vacio in credentials) {
-            if (credentials[vacio] === "") {
+        for (let nothing in credentials) {
+            if (credentials[nothing] === "") {
                 setLoginAct(false);
                 return;
             }
@@ -90,7 +90,7 @@ export const Login = () => {
 
     useEffect(() => {
         if (credentialsRdx.credentials.token) {
-            navigate("/");
+            navigate("/login");
         }
     }, []);
 
