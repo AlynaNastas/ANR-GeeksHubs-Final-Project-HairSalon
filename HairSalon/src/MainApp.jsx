@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { FooterPage } from "./components/Footer/FooterPage"
 import { NavbarPage } from "./components/Navbar/NavbarPage"
+import { AllUsers } from "./layout/adminSeeUsers/AllUsers"
 import { Home } from "./layout/Home"
 import { Login } from "./layout/Login/Login"
 import { UniqueProfile } from "./layout/Profile/UniqueProfile"
@@ -17,6 +18,7 @@ export const MainApp = () => {
     <Route path= '/login' element={<Login/>}/>
     <Route path= '/register' element={<Register/>}/>
     <Route path= '/profile' element={<UniqueProfile/>}/>
+    <Route path= '/viewusers' element={<AllUsers/>}/>
     </Routes>
     <FooterPage/>
     </>

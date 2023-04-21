@@ -18,3 +18,12 @@ export const registUser = async (body) => {
         };
         return await axios.get(`${root}/profile`, config);
     }
+
+    export const bringUsers = async (token) => {
+        const config = {
+            headers: {
+                Authorization : `Bearer ${token} `  
+            }
+        };
+        return await axios.get(`${root}/admin/users`, config);
+    }

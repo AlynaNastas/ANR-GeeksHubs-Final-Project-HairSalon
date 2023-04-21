@@ -25,6 +25,9 @@ export const NavbarPage = () => {
         <Nav.Link as={Link} to="/">
                 Home
         </Nav.Link>
+        <Nav.Link as={Link} to="/viewusers">
+                View users
+        </Nav.Link>
         <Nav.Link as={Link} to="/profile">
                 Profile
         </Nav.Link>
