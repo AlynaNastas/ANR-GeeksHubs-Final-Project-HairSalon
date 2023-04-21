@@ -18,6 +18,7 @@ import './Login.css';
 export const Login = () => {
 
     const credentialsRdx = useSelector(userData);
+    console.log(credentialsRdx)
 
     const navigate = useNavigate();
 
@@ -131,15 +132,14 @@ export const Login = () => {
                         token: respuesta.data,
                         usuario: decodificado
 
-
-
                     }
 
 
                     dispatch(login({ credentials: datosBackend }));
 
 
-                    setWelcome(`Hi, there! ${datosBackend.usuario.name}`);
+                    setWelcome(`Hi, there! ${datosBackend.usuario.email}`);
+
 
                     setTimeout(() => {
                         navigate("/home");

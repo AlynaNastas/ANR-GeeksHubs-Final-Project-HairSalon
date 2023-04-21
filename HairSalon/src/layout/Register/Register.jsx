@@ -214,6 +214,7 @@ export const Register = () => {
                                     changeFunction={(e) => inputHandler(e)}
                                     blurFunction={(e) => checkError(e)} />
                                 <Form.Text className="text-muted">
+                                    Phone number must include country code ex. (+00)
                                 </Form.Text>
                                 <div className='RedError'>{credentialsError.phoneError}</div>
                             </Form.Group>

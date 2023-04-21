@@ -25,6 +25,9 @@ export const NavbarPage = () => {
         <Nav.Link as={Link} to="/">
                 Home
         </Nav.Link>
+        <Nav.Link as={Link} to="/profile">
+                Profile
+        </Nav.Link>
             <NavDropdown title="About" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
                     Salon

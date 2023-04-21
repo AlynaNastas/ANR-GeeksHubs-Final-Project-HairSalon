@@ -68,31 +68,6 @@ export const validation = (name, info, required) => {
             
             return { message: "", validation: true };
 
-        case "Passport":
-        case "DNI":
-        case "nif":
-
-            if (info === "" && required === true) {
-                return { message: "Please fill the field", validation: false };
-            } else if (!/^[a-z]{1}[0-9]{8}?$/i.test(info)) {
-                return { message: "Invalid nif", validation: false };
-            }
-            return { message: "", validation: true };
-
-
-        case "adress":
-        case "direction":
-
-            if (info === "" && required === true) {
-                return { message: "Please fill the field", validation: false };
-            } else if (!/[a-z]/gi.test(info)) {
-                return { message: "Invalid Date of Birth", validation: false };
-            }
-            return { message: "", validation: true };
-
-
-
-
 
 
         default:
