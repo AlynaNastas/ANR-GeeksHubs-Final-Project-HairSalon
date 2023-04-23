@@ -17,6 +17,8 @@ export const NavbarPage = () => {
         dispatch(userout({ credentials: {}, token: "" }));
     };
 
+
+
     const dataCredentialsRdx = useSelector(userData);
 
     if (!dataCredentialsRdx.credentials.usuario) {
@@ -70,7 +72,6 @@ export const NavbarPage = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-
     }
     if (dataCredentialsRdx.credentials.usuario.roles.includes('Admin')) {
 
@@ -81,6 +82,12 @@ export const NavbarPage = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <>
+                            <Nav.Link as={Link} to="/register">
+                                Register
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/login">
+                                Login
+                            </Nav.Link>
                             <Nav.Link as={Link} to="/">
                                 Home
                             </Nav.Link>
@@ -124,5 +131,108 @@ export const NavbarPage = () => {
             </Container>
         </Navbar>
     }
+
+    if (dataCredentialsRdx.credentials.usuario.roles.includes('Stylist')) {
+
+        return <Navbar bg="dark" expand="lg" variant="dark">
+            <Container>
+                <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <>
+                            <Nav.Link as={Link} to="/">
+                                Home
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/profile">
+                                Profile
+                            </Nav.Link>
+                            <NavDropdown title="About" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">
+                                    Salon
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    Team
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">
+                                    Treatments
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">
+                                    Services
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.5">
+                                    Our History
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.6">
+                                    News
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.7">
+                                    Reviews
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.7">
+                                    Contact
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                            </NavDropdown>
+                        </>
+                        <Nav.Link onClick={logout} as={Link} to="/home">Logout</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+
+    }
+    if (dataCredentialsRdx.credentials.usuario.roles.includes('User')) {
+
+        return <Navbar bg="dark" expand="lg" variant="dark">
+            <Container>
+                <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <>
+                            <Nav.Link as={Link} to="/">
+                                Home
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/profile">
+                                Profile
+                            </Nav.Link>
+                            <NavDropdown title="About" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">
+                                    Salon
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    Team
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">
+                                    Treatments
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">
+                                    Services
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.5">
+                                    Our History
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.6">
+                                    News
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.7">
+                                    Reviews
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.7">
+                                    Contact
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                            </NavDropdown>
+                        </>
+                        <Nav.Link onClick={logout} as={Link} to="/home">Logout</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    }
+
 }
+
+
 
