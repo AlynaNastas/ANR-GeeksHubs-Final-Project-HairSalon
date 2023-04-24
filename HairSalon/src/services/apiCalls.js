@@ -35,4 +35,11 @@ export const registUser = async (body) => {
         };
         return await axios.get(`${root}/stylist/app`, config , token);
     }
-    
+    export const viewAdminapp  = async (token) => {
+        const config = {
+            headers: {
+                Authorization : `Bearer ${token} `  
+            }
+        };
+        return await axios.get(`${root}/admin/app`, config , token);
+    }

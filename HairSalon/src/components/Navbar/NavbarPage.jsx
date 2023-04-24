@@ -88,7 +88,7 @@ export const NavbarPage = () => {
                             <Nav.Link as={Link} to="/viewusers">
                                 View users
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/viewapp">
+                            <Nav.Link as={Link} to="/viewadminapp">
                                 View all appointments
                             </Nav.Link>
                             <Nav.Link as={Link} to="/profile">
@@ -144,7 +144,7 @@ export const NavbarPage = () => {
                             <Nav.Link as={Link} to="/profile">
                                 Profile
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/viewadminapp">
+                            <Nav.Link as={Link} to="/viewapp">
                                 View all appointments
                             </Nav.Link>
                             <NavDropdown title="About" id="basic-nav-dropdown">
