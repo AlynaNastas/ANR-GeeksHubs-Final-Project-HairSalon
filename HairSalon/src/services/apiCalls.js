@@ -43,3 +43,28 @@ export const registUser = async (body) => {
         };
         return await axios.get(`${root}/admin/app`, config , token);
     }
+    export const createAppointment = async (body, token) => {
+        const config = {
+            headers: {
+                Authorization : `Bearer ${token} `  
+            }
+        };
+        return await axios.post(`${root}/appoint`, body, config);
+    }
+
+    export const viewRoles  = async (id, token) => {
+        const config = {
+            headers: {
+                Authorization : `Bearer ${token} `  
+            }
+        };
+        return await axios.get(`${root}/users/role/${id}`, config , token);
+    }
+    export const getServices  = async (token) => {
+        const config = {
+            headers: {
+                Authorization : `Bearer ${token} `  
+            }
+        };
+        return await axios.get(`${root}/services`, config , token);
+    }

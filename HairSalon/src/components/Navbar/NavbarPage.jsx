@@ -91,6 +91,9 @@ export const NavbarPage = () => {
                             <Nav.Link as={Link} to="/viewadminapp">
                                 View all appointments
                             </Nav.Link>
+                            <Nav.Link as={Link} to="/roles">
+                                View roles
+                            </Nav.Link>
                             <Nav.Link as={Link} to="/profile">
                                 Profile
                             </Nav.Link>
@@ -196,6 +199,9 @@ export const NavbarPage = () => {
                             </Nav.Link>
                             <Nav.Link as={Link} to="/profile">
                                 Profile
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/scheduleappointment">
+                                Schedule appointment
                             </Nav.Link>
                             <NavDropdown title="About" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">
