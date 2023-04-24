@@ -5,6 +5,7 @@ import { bringUsers } from "../../services/apiCalls";
 import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import { addChoosen } from "../../detailSlice";
 
 
 export const AllUsers = () => {
@@ -37,7 +38,7 @@ export const AllUsers = () => {
         dispatch(addChoosen({ choosenObject: persona }))
 
         setTimeout(() => {
-            navigate("/");
+            navigate("/roles");
         }, 250)
     }
     return (
