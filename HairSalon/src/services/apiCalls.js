@@ -27,3 +27,12 @@ export const registUser = async (body) => {
         };
         return await axios.get(`${root}/admin/users`, config);
     }
+    export const viewAppointments  = async (token) => {
+        const config = {
+            headers: {
+                Authorization : `Bearer ${token} `  
+            }
+        };
+        return await axios.get(`${root}/stylist/app`, config , token);
+    }
+    

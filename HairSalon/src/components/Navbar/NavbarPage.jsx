@@ -82,17 +82,14 @@ export const NavbarPage = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <>
-                            <Nav.Link as={Link} to="/register">
-                                Register
-                            </Nav.Link>
-                            <Nav.Link as={Link} to="/login">
-                                Login
-                            </Nav.Link>
                             <Nav.Link as={Link} to="/">
                                 Home
                             </Nav.Link>
                             <Nav.Link as={Link} to="/viewusers">
                                 View users
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/viewapp">
+                                View all appointments
                             </Nav.Link>
                             <Nav.Link as={Link} to="/profile">
                                 Profile
@@ -146,6 +143,9 @@ export const NavbarPage = () => {
                             </Nav.Link>
                             <Nav.Link as={Link} to="/profile">
                                 Profile
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/viewadminapp">
+                                View all appointments
                             </Nav.Link>
                             <NavDropdown title="About" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">
