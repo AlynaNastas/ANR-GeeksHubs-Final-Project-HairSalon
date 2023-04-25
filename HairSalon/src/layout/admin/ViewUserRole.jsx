@@ -39,20 +39,20 @@ export const ViewUserRole = () => {
                         <div>
                             {
                                 roles.map(
-                                    params => {
+                                    privilege=> {
                                         return (
                                 <>
                                     <Container className='Center' >
                                         <Card>
                                             <Card.Body
-                                                onClick={() => selected(params)}
-                                                key={params.id} >
-                                                <Card.Title>Roles:&nbsp; {params?.Roles?.privilege} </Card.Title>
-                                                <Card.Title>Name:&nbsp; {params?.Roles?.name} </Card.Title>
-                                                <Card.Title>Surname:&nbsp; {params.Roles?.surname} </Card.Title>
-                                                <Card.Title>Birth date:&nbsp; {params?.Roles?.birth_date} </Card.Title>
-                                                <Card.Title>Phone:&nbsp; {params?.Roles?.phone} </Card.Title>
-                                                <Card.Title>Email:&nbsp; {params?.Roles?.email} </Card.Title>
+                                                onClick={() => selected(privilege)}
+                                                key={privilege.id} >
+                                                <Card.Title>Roles:&nbsp; {privilege?.Roles?.privilege} </Card.Title>
+                                                <Card.Title>Name:&nbsp; {privilege?.Roles?.name} </Card.Title>
+                                                <Card.Title>Surname:&nbsp; {privilege.Roles?.surname} </Card.Title>
+                                                <Card.Title>Birth date:&nbsp; {privilege?.Roles?.birth_date} </Card.Title>
+                                                <Card.Title>Phone:&nbsp; {privilege?.Roles?.phone} </Card.Title>
+                                                <Card.Title>Email:&nbsp; {privilege?.Roles?.email} </Card.Title>
                                                 </Card.Body>
                                             </Card>
                                     </Container>
