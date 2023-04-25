@@ -6,12 +6,25 @@ import { UserAppointments } from "../../services/apiCalls";
 import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/esm/Card';
+import Form from 'react-bootstrap/Form';
 
 export const UserAppoint = () => {
- 
+
     const [user, setUser] = useState([]);
 
     const RdxCredentials = useSelector(userData);
+
+    const [stylists, setStylists] = useState([
+        {
+            stylist_id: 1,
+            stylistname: "Alyna Nastas Romaniuc"
+        },
+        {
+            stylist_id: 2,
+            stylistname: "Giota Chamakioti"
+        }
+    ]);
+
 
 
     const dispatch = useDispatch();
@@ -51,6 +64,7 @@ export const UserAppoint = () => {
                         {
                             user.map(
                                 unique => {
+
                                     return (
 
                                         <>
@@ -64,7 +78,17 @@ export const UserAppoint = () => {
                                                         <Card.Title>Date:&nbsp; {unique?.date} </Card.Title>
                                                         <Card.Title>Treatment name:&nbsp; {unique?.Service?.name} </Card.Title>
                                                         <Card.Title>Price:&nbsp; {unique?.Service?.price} </Card.Title>
-                                                        <Card.Title>Stylist:&nbsp; {unique?.stylist_id} </Card.Title>
+                                                        <div>
+                                                            {
+                                                                stylists.map(
+                                                                    professional => {
+                                                                        return (
+                                                                            <Card.Title name={"stylist_id"}>  <div key={professional.id} value={professional.id}>{professional.stylistname}</div> </Card.Title>
+                                                                        )
+                                                                    }
+                                                                )
+                                                            }
+                                                        </div>
                                                     </Card.Body>
                                                 </Card>
                                             </Container>
@@ -83,5 +107,5 @@ export const UserAppoint = () => {
 
             </Container>
         </div>
-  )
+    )
 }

@@ -76,3 +76,11 @@ export const registUser = async (body) => {
         };
         return await axios.get(`${root}/users/appointments`, config , token);
     }
+    export const UsersByStylist  = async (token) => {
+        const config = {
+            headers: {
+                Authorization : `Bearer ${token} `  
+            }
+        };
+        return await axios.get(`${root}/users/stylist`, config , token);
+    }

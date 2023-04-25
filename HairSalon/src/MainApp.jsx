@@ -11,6 +11,7 @@ import { Register } from "./layout/Register/Register"
 import { CreateAppoint } from "./layout/user/createAppoint"
 import { ViewUserRole } from "./layout/admin/ViewUserRole"
 import { UserAppoint } from "./layout/user/UserAppoint"
+import { SeeUsers } from "./layout/stylist/SeeUsers"
 
 
 
@@ -30,6 +31,7 @@ export const MainApp = () => {
     <Route path= '/scheduleappointment' element={<CreateAppoint/>}/>
     <Route path= '/roles' element={<ViewUserRole/>}/>
     <Route path= '/appointments' element={<UserAppoint/>}/>
+    <Route path= '/usersbystylist' element={<SeeUsers/>}/>
   
     </Routes>
     <FooterPage/>
