@@ -12,6 +12,7 @@ import { CreateAppoint } from "./layout/user/createAppoint"
 import { ViewUserRole } from "./layout/admin/ViewUserRole"
 import { UserAppoint } from "./layout/user/UserAppoint"
 import { SeeUsers } from "./layout/stylist/SeeUsers"
+import { UpdateProfile } from "./layout/user/UpdateProfile"
 
 
 
@@ -32,6 +33,7 @@ export const MainApp = () => {
     <Route path= '/roles' element={<ViewUserRole/>}/>
     <Route path= '/appointments' element={<UserAppoint/>}/>
     <Route path= '/usersbystylist' element={<SeeUsers/>}/>
+    <Route path= '/updateprofile' element={<UpdateProfile/>}/>
   
     </Routes>
     <FooterPage/>

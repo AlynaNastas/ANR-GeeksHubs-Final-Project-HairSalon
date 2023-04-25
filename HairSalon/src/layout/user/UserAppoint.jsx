@@ -43,7 +43,7 @@ export const UserAppoint = () => {
                 .catch(error => console.log(error))
         }
 
-    }, [user])
+    }, [])
     console.log(user)
 
     const selected = (choosen) => {
@@ -101,7 +101,7 @@ export const UserAppoint = () => {
 
                     :
 
-                    (<div>coming...</div>)
+                    (<div>Appointments not found</div>)
 
                 }
 

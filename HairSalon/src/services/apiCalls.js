@@ -84,3 +84,6 @@ export const registUser = async (body) => {
         };
         return await axios.get(`${root}/users/stylist`, config , token);
     }
+    export const UpdatePro = async (body) => {
+        return await axios.put(`${root}/updateprofile`, body);
+        }

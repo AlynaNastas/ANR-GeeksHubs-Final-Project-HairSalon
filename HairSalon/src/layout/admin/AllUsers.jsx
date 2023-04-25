@@ -61,8 +61,8 @@ export const AllUsers = () => {
                                                         key={unique.id} >
                                                         <Card.Title>Name:&nbsp; {unique.name} </Card.Title>
                                                         <Card.Title>Surname:&nbsp; {unique.surname} </Card.Title>
-                                                        <Card.Title>Email:&nbsp; {unique.email} </Card.Title>
-                                                        <Card.Title>Phone:&nbsp; {unique.phone} </Card.Title>
+                                                        //<Card.Title>Email:&nbsp; {unique.email} </Card.Title>
+                                                        //<Card.Title>Phone:&nbsp; {unique.phone} </Card.Title>
                                                     </Card.Body>
                                                 </Card>
                                             </Container>

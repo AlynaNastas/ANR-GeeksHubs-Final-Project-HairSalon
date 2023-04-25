@@ -31,7 +31,7 @@ export const ViewUserRole = () => {
             .catch(error => console.log(error));
         }
     }, [roles])
-    console.log(roles)
+    console.log(roles, "jjj")
 
     return (
                 <div className="Center">
@@ -39,20 +39,17 @@ export const ViewUserRole = () => {
                         <div>
                             {
                                 roles.map(
-                                    privilege=> {
+                                    privilege => {
                                         return (
                                 <>
                                     <Container className='Center' >
                                         <Card>
                                             <Card.Body
-                                                onClick={() => selected(privilege)}
+                                                onClick={() => selected(pro)}
                                                 key={privilege.id} >
-                                                <Card.Title>Roles:&nbsp; {privilege?.Roles?.privilege} </Card.Title>
-                                                <Card.Title>Name:&nbsp; {privilege?.Roles?.name} </Card.Title>
-                                                <Card.Title>Surname:&nbsp; {privilege.Roles?.surname} </Card.Title>
-                                                <Card.Title>Birth date:&nbsp; {privilege?.Roles?.birth_date} </Card.Title>
-                                                <Card.Title>Phone:&nbsp; {privilege?.Roles?.phone} </Card.Title>
-                                                <Card.Title>Email:&nbsp; {privilege?.Roles?.email} </Card.Title>
+                                    
+                                                <Card.Title>Name:&nbsp; {privilege?.name} </Card.Title>
+                                            
                                                 </Card.Body>
                                             </Card>
                                     </Container>
@@ -65,6 +62,6 @@ export const ViewUserRole = () => {
                     ) : (
                         <div>coming ... </div>
                     )}
-               </div>
+            </div>
   )
 }

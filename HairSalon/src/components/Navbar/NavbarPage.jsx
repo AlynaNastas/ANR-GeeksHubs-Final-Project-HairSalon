@@ -209,6 +209,9 @@ export const NavbarPage = () => {
                             <Nav.Link as={Link} to="/appointments">
                                 My appointments
                             </Nav.Link>
+                            <Nav.Link as={Link} to="/updateprofile">
+                                Update profile
+                            </Nav.Link>
                             <NavDropdown title="About" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">
                                     Salon
