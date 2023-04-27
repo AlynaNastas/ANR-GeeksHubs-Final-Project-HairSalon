@@ -77,7 +77,7 @@ export const NavbarPage = () => {
     }
     if (dataCredentialsRdx.credentials.usuario.roles.includes('Admin')) {
 
-        return <Navbar bg="dark" expand="lg" variant="dark">
+        return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -136,7 +136,7 @@ export const NavbarPage = () => {
 
     if (dataCredentialsRdx.credentials.usuario.roles.includes('Stylist')) {
 
-        return <Navbar bg="dark" expand="lg" variant="dark">
+        return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -192,7 +192,7 @@ export const NavbarPage = () => {
     }
     if (dataCredentialsRdx.credentials.usuario.roles.includes('User')) {
 
-        return <Navbar bg="dark" expand="lg" variant="dark">
+        return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

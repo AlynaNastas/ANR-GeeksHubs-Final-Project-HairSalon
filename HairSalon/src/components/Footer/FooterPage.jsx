@@ -6,7 +6,7 @@ import '../Footer/FooterPage.css';
 export const FooterPage = () => {
   return (
     <>
-    <div className="Foot" >
+    <div className="fontStyle" >
         <Container >
     <Row>
             <Col className='margin mt-2'>  
