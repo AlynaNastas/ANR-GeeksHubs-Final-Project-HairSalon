@@ -6,6 +6,10 @@ import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/esm/Card';
 import Button from "react-bootstrap/esm/Button";
 import { useNavigate } from "react-router-dom";
+import Row from "react-bootstrap/esm/Row";
+import "./SeeAppoint.css"
+
+
 
 
 export const SeeAppoint = () => {
@@ -50,20 +54,24 @@ console.log(app2)
                                     app => {
                                         return (
                                 <>
-                                    <Container className='Center' >
-                                        <Card>
+                                    <Container>
+                                        
+                                        <Card className='midiumCard'>
+                                        <Row>
                                             <Card.Body
                                                 key={app.id} >
                                                 <Card.Title>Name:&nbsp; {app?.Client?.User?.name} </Card.Title>
                                                 <Card.Title>Surname:&nbsp; {app?.Client?.User?.surname} </Card.Title>
                                                 <Card.Title>Stylist:&nbsp; {app.stylist_id} </Card.Title>
                                                 <Card.Title>Service:&nbsp; {app?.Service?.name} </Card.Title>
-                                                <Card.Title>Price:&nbsp; {app?.Service?.price} </Card.Title>
+                                                <Card.Title>Price:&nbsp; {app?.Service?.price} £ </Card.Title>
                                                 <Card.Title>Date:&nbsp; {app.date} </Card.Title>
                                                 <Card.Title>Comments:&nbsp; {app.comments}</Card.Title>
                                                 <Button onClick={()=>selected(app)} variant="light">Delete</Button>{' '}
                                                 </Card.Body>
+                                                </Row>
                                             </Card>
+                                            
                                     </Container>
                                 </>
                                         );

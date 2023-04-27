@@ -43,8 +43,8 @@ export const UniqueProfile = () => {
 
         <>
 
-            <Container className='Center' >
-                <Card>
+            <Container>
+                <Card className='smallCard'>
                     <Card.Body>
                         <Card.Title>Name:&nbsp; {user.name} </Card.Title>
                         <Card.Title>Surname:&nbsp; {user.surname} </Card.Title>

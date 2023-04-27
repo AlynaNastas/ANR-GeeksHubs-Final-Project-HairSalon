@@ -1,0 +1,8 @@
+.smallCard {
+    display: flex;
+    justify-content: left; 
+    width: 30em;
+    height: 10em; 
+    margin-bottom: 5em;
+    margin-top: 5em;
+}

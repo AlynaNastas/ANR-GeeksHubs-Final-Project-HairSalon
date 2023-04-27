@@ -6,6 +6,9 @@ import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import { addChoosen } from "../../detailSlice";
+import "./AllUsers.css"
+import Row from "react-bootstrap/esm/Row";
+import Col from "react-bootstrap/esm/Col";
 
 
 export const AllUsers = () => {
@@ -54,16 +57,18 @@ export const AllUsers = () => {
                                     return (
 
                                         <>
-                                            <Container className='Center' >
-                                                <Card>
+                                            <Container >
+                                                <Card className='smallCard'>
+                                                    <Row>
                                                     <Card.Body
                                                         onClick={() => selected(unique)}
                                                         key={unique.id} >
                                                         <Card.Title>Name:&nbsp; {unique.name} </Card.Title>
                                                         <Card.Title>Surname:&nbsp; {unique.surname} </Card.Title>
-                                                        //<Card.Title>Email:&nbsp; {unique.email} </Card.Title>
-                                                        //<Card.Title>Phone:&nbsp; {unique.phone} </Card.Title>
+                                                        <Card.Title>Email:&nbsp; {unique.email} </Card.Title>
+                                                        <Card.Title>Phone:&nbsp; {unique.phone} </Card.Title>
                                                     </Card.Body>
+                                                    </Row>
                                                 </Card>
                                             </Container>
                                         </>

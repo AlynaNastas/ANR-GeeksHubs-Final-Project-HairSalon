@@ -36,8 +36,8 @@ export const AllAppoint = () => {
                                     app => {
                                         return (
                                 <>
-                                    <Container className='Center' >
-                                        <Card>
+                                    <Container>
+                                        <Card className='midiumCard'>
                                             <Card.Body
                                                 onClick={() => selected(app)}
                                                 key={app.id} >
@@ -45,7 +45,7 @@ export const AllAppoint = () => {
                                                 <Card.Title>Surname:&nbsp; {app?.Client?.User?.surname} </Card.Title>
                                                 <Card.Title>Stylist:&nbsp; {app.stylist_id} </Card.Title>
                                                 <Card.Title>Service:&nbsp; {app?.Service?.name} </Card.Title>
-                                                <Card.Title>Price:&nbsp; {app?.Service?.price} </Card.Title>
+                                                <Card.Title>Price:&nbsp; {app?.Service?.price} £ </Card.Title>
                                                 <Card.Title>Date:&nbsp; {app.date} </Card.Title>
                                                 <Card.Title>Comments:&nbsp; {app.comments}</Card.Title>
                                                 </Card.Body>

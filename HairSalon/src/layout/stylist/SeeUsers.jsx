@@ -53,8 +53,8 @@ export const SeeUsers = () => {
                                     return (
 
                                         <>
-                                            <Container className='Center' >
-                                                <Card>
+                                            <Container>
+                                                <Card className='smallCard'>
                                                     <Card.Body
                                                         onClick={() => selected(pro)}
                                                         key={pro.id} >

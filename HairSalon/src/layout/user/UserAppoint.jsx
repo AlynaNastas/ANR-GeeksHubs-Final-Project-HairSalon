@@ -57,15 +57,15 @@ export const UserAppoint = () => {
                                     return (
 
                                         <>
-                                            <Container className='Center' >
-                                                <Card>
+                                            <Container >
+                                                <Card className='midiumCard'>
                                                     <Card.Body
                                                         key={unique.id} >
                                                         <Card.Title>Name:&nbsp; {unique?.Client?.User.name} </Card.Title>
                                                         <Card.Title>Surname:&nbsp; {unique?.Client?.User.surname} </Card.Title>
                                                         <Card.Title>Date:&nbsp; {unique?.date} </Card.Title>
                                                         <Card.Title>Treatment name:&nbsp; {unique?.Service?.name} </Card.Title>
-                                                        <Card.Title>Price:&nbsp; {unique?.Service?.price} </Card.Title>
+                                                        <Card.Title>Price:&nbsp; {unique?.Service?.price} £ </Card.Title>
                                                         <Button onClick={()=>selected(unique)} variant="light">Delete</Button>{' '}
                                                     </Card.Body>
                                                 </Card>
