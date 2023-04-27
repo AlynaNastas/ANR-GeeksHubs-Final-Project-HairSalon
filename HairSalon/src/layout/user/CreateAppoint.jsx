@@ -9,6 +9,7 @@ import { InputPage } from '../../components/Input/InputPage';
 import { useEffect } from 'react';
 
 
+
 export const CreateAppoint = () => {
     const credentialsRdx = useSelector(userData);
     console.log(credentialsRdx.credentials.usuario)
@@ -128,7 +129,7 @@ export const CreateAppoint = () => {
 
                     <div className='button2'>
                         <Button
-                            onClick={buttonApp} variant="primary">
+                            onClick={buttonApp} variant="dark">
                             Submit
                         </Button>
                     </div>

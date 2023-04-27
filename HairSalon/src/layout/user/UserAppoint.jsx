@@ -66,7 +66,7 @@ export const UserAppoint = () => {
                                                         <Card.Title>Date:&nbsp; {unique?.date} </Card.Title>
                                                         <Card.Title>Treatment name:&nbsp; {unique?.Service?.name} </Card.Title>
                                                         <Card.Title>Price:&nbsp; {unique?.Service?.price} </Card.Title>
-                                                        <Button onClick={()=>selected(unique)}>Delete</Button>
+                                                        <Button onClick={()=>selected(unique)} variant="light">Delete</Button>{' '}
                                                     </Card.Body>
                                                 </Card>
                                             </Container>

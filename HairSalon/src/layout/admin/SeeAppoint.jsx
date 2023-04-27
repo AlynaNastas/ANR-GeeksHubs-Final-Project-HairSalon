@@ -61,7 +61,7 @@ console.log(app2)
                                                 <Card.Title>Price:&nbsp; {app?.Service?.price} </Card.Title>
                                                 <Card.Title>Date:&nbsp; {app.date} </Card.Title>
                                                 <Card.Title>Comments:&nbsp; {app.comments}</Card.Title>
-                                                <Button onClick={()=>selected(app)}>Delete</Button>
+                                                <Button onClick={()=>selected(app)} variant="light">Delete</Button>{' '}
                                                 </Card.Body>
                                             </Card>
                                     </Container>
@@ -74,7 +74,7 @@ console.log(app2)
                     ) : (
                         <div>coming ... </div>
                     )}
-               </div>
+            </div>
     
     )
 }

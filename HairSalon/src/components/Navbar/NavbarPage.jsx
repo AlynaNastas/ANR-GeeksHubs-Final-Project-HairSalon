@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useDispatch, useSelector } from "react-redux";
 import { userData, userout } from "../../userSlice";
+import "../Navbar/NavbarPage.css"
+
 
 
 
@@ -23,7 +25,7 @@ export const NavbarPage = () => {
 
     if (!dataCredentialsRdx.credentials.usuario) {
 
-        return <Navbar bg="dark" expand="lg" variant="dark">
+        return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
