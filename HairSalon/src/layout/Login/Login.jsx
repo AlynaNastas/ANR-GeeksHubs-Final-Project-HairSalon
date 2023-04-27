@@ -138,7 +138,8 @@ export const Login = () => {
                     dispatch(login({ credentials: datosBackend }));
 
 
-                    setWelcome(`Hi, there! ${datosBackend.usuario.email}`);
+                    setWelcome(`Hi, there! ${datosBackend.usuario.name}`);
+
 
 
                     setTimeout(() => {

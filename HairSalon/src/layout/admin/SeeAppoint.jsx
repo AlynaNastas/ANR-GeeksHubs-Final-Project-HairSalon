@@ -1,14 +1,20 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { viewAdminapp } from "../../services/apiCalls";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteAppointAdmin, viewAdminapp } from "../../services/apiCalls";
 import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/esm/Card';
+import Button from "react-bootstrap/esm/Button";
+import { useNavigate } from "react-router-dom";
 
 
 export const SeeAppoint = () => {
 
     const credentialRdx = useSelector(userData)
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
 
 
     const [appointments, setAppointments] = useState([]);
@@ -19,7 +25,6 @@ export const SeeAppoint = () => {
         viewAdminapp(credentialRdx.credentials?.token)
             .then( result => {
                     setAppointments(result.data)
-                    console.log(result.data)
                 }
             )
             .catch(error => console.log(error));
@@ -27,8 +32,17 @@ export const SeeAppoint = () => {
     }, [appointments])
     console.log(appointments)
 
+    const selected = (app2) => {
+console.log(app2)
+        deleteAppointAdmin( credentialRdx.credentials.token)
+
+        setTimeout(() => {
+            navigate("/");
+    }, 250)
+}
+
     return (
-                <div className="Center">
+                <div>
                     {appointments.length > 0 ? (
                         <div>
                             {
@@ -39,7 +53,6 @@ export const SeeAppoint = () => {
                                     <Container className='Center' >
                                         <Card>
                                             <Card.Body
-                                                onClick={() => selected(app)}
                                                 key={app.id} >
                                                 <Card.Title>Name:&nbsp; {app?.Client?.User?.name} </Card.Title>
                                                 <Card.Title>Surname:&nbsp; {app?.Client?.User?.surname} </Card.Title>
@@ -48,6 +61,7 @@ export const SeeAppoint = () => {
                                                 <Card.Title>Price:&nbsp; {app?.Service?.price} </Card.Title>
                                                 <Card.Title>Date:&nbsp; {app.date} </Card.Title>
                                                 <Card.Title>Comments:&nbsp; {app.comments}</Card.Title>
+                                                <Button onClick={()=>selected(app)}>Delete</Button>
                                                 </Card.Body>
                                             </Card>
                                     </Container>

@@ -14,8 +14,7 @@ export const appointmentSlice = createSlice({
         },
 
     }
-}
-);
+});
 
 export const { addChoosenAppointmen } = appointmentSlice.actions;
 
