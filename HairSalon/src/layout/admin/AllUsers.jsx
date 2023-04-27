@@ -7,8 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import { addChoosen } from "../../detailSlice";
 import "./AllUsers.css"
-import Row from "react-bootstrap/esm/Row";
-import Col from "react-bootstrap/esm/Col";
+import blue from '../../assets/blue.png'
 
 
 export const AllUsers = () => {
@@ -55,11 +54,10 @@ export const AllUsers = () => {
                             user.map(
                                 unique => {
                                     return (
-
+                                    
                                         <>
-                                            <Container >
+                                            <Container> 
                                                 <Card className='smallCard'>
-                                                    <Row>
                                                     <Card.Body
                                                         onClick={() => selected(unique)}
                                                         key={unique.id} >
@@ -68,7 +66,6 @@ export const AllUsers = () => {
                                                         <Card.Title>Email:&nbsp; {unique.email} </Card.Title>
                                                         <Card.Title>Phone:&nbsp; {unique.phone} </Card.Title>
                                                     </Card.Body>
-                                                    </Row>
                                                 </Card>
                                             </Container>
                                         </>

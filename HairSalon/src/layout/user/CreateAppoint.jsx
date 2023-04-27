@@ -7,6 +7,8 @@ import { createAppointment, getServices } from "../../services/apiCalls";
 import { userData } from "../../userSlice";
 import { InputPage } from '../../components/Input/InputPage';
 import { useEffect } from 'react';
+import Row from 'react-bootstrap/esm/Row';
+import Col from 'react-bootstrap/esm/Col';
 
 
 
@@ -82,8 +84,9 @@ export const CreateAppoint = () => {
 
         <div className='Reg'>
             <Container className='boody'>
+                <Row className='justify-content-center' >
+                    <Col xs={12} sm={10} lg={8} >
                 <Form>
-
 
                     <Form.Label>Stylist:</Form.Label>
                     <Form.Select name={"stylist_id"} onChange={(e) => inputHandler(e)} aria-label="Default select example">
@@ -134,6 +137,8 @@ export const CreateAppoint = () => {
                         </Button>
                     </div>
                 </Form>
+                </Col>
+                </Row>
             </Container>
         </div>
 
