@@ -7,7 +7,6 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import { addChoosen } from "../../detailSlice";
 import "./AllUsers.css"
-import blue from '../../assets/blue.png'
 
 
 export const AllUsers = () => {
@@ -56,7 +55,7 @@ export const AllUsers = () => {
                                     return (
                                     
                                         <>
-                                            <Container> 
+                                            <Container className="fontStyle"> 
                                                 <Card className='smallCard'>
                                                     <Card.Body
                                                         onClick={() => selected(unique)}

@@ -45,7 +45,7 @@ export const UserAppoint = () => {
     }
     return (
         <div>
-            <Container>
+            <Container className="simpleFont">
 
                 {user.length > 0 ?
 

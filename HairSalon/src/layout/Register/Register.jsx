@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/esm/Col';
 import Container from 'react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/esm/Row';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
 import { InputPage } from '../../components/Input/InputPage';
 import { validation } from '../../helpers/Validations'
 import { registUser } from '../../services/apiCalls'
-//import './Register.css'
+import './Register.css'
 
 
 
@@ -129,7 +131,9 @@ export const Register = () => {
 
     return (
         <>
-                <Container>
+                <Container className='simpleFont'>
+                <Row className='justify-content-center' >
+                    <Col xs={12} sm={10} lg={8} >
                     <Form>
 
                         <Form.Group className="mb-3" controlId="formBasicName">
@@ -218,6 +222,8 @@ export const Register = () => {
                         </Form.Group>
                         <Button onClick={ () => registerMe() } variant="dark"> Submit </Button>
                     </Form>
+                    </Col>
+                    </Row>
                 </Container>
         </>
     );

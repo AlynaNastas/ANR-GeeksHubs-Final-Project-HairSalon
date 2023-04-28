@@ -82,8 +82,8 @@ export const CreateAppoint = () => {
 
     return (
 
-        <div className='Reg'>
-            <Container className='boody'>
+        <div>
+            <Container className='simpleFont'>
                 <Row className='justify-content-center' >
                     <Col xs={12} sm={10} lg={8} >
                 <Form>

@@ -236,7 +236,6 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.7">
                                     Contact
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
                             </NavDropdown>
                         </>
                         <Nav.Link onClick={logout} as={Link} to="/home">Logout</Nav.Link>

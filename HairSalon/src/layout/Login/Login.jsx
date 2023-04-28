@@ -10,6 +10,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { login, userData } from '../../userSlice';
 import { decodeToken } from "react-jwt";
 import './Login.css';
+import Row from 'react-bootstrap/esm/Row';
+import Col from 'react-bootstrap/esm/Col';
+
 
 
 
@@ -157,8 +160,10 @@ export const Login = () => {
             ) : (
 
                 <div className='Main'>
-                    <Container className='body1'>
-
+                
+                    <Container className='simpleFont'>
+                    <Row className='justify-content-center' >
+                    <Col xs={12} sm={8} lg={4} >
                         <div>
                             <Form>
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -197,6 +202,8 @@ export const Login = () => {
                                 </div>
                             </Form>
                         </div>
+                        </Col>
+                        </Row>
                     </Container>
                 </div>
             )}

@@ -49,7 +49,7 @@ console.log(profile, "lalalal")
 return (
 
   <div className='Reg'>
-      <Container className='boody'>
+      <Container className='simpleFont'>
           <Form>
 
               <Form.Group className="mb-3" controlId="formBasicName">

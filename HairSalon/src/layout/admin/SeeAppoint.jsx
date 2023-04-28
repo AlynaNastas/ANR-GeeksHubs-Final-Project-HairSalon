@@ -54,7 +54,7 @@ console.log(app2)
                                     app => {
                                         return (
                                 <>
-                                    <Container>
+                                    <Container className='simpleFont'>
                                         
                                         <Card className='midiumCard'>
                                         <Row>
