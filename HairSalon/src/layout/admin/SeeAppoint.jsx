@@ -40,9 +40,7 @@ export const SeeAppoint = () => {
 console.log(app2)
         deleteAppointAdmin( credentialRdx.credentials.token)
 
-        setTimeout(() => {
-            navigate("/");
-    }, 250)
+    
 }
 
     return (

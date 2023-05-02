@@ -102,7 +102,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.1">
                                     Salon
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
+                                <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">
@@ -157,7 +157,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.1">
                                     Salon
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
+                                <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">
@@ -215,7 +215,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.1">
                                     Salon
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
+                                <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">
@@ -236,6 +236,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.7">
                                     Contact
                                 </NavDropdown.Item>
+
                             </NavDropdown>
                         </>
                         <Nav.Link onClick={logout} as={Link} to="/home">Logout</Nav.Link>

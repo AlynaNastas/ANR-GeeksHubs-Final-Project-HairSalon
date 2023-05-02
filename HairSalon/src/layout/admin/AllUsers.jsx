@@ -34,12 +34,12 @@ export const AllUsers = () => {
 
     }, [user])
 
-    const selected = (persona) => {
+    const selected = () => {
 
-        dispatch(addChoosen({ choosenObject: persona }))
+      //  dispatch(addChoosen({ choosenObject: buttons }))
 
         setTimeout(() => {
-            navigate("/roles");
+            navigate("/appointments");
         }, 250)
     }
     return (
@@ -58,7 +58,7 @@ export const AllUsers = () => {
                                             <Container className="fontStyle"> 
                                                 <Card className='smallCard'>
                                                     <Card.Body
-                                                        onClick={() => selected(unique)}
+                                                        onClick={() => selected()}
                                                         key={unique.id} >
                                                         <Card.Title>Name:&nbsp; {unique.name} </Card.Title>
                                                         <Card.Title>Surname:&nbsp; {unique.surname} </Card.Title>

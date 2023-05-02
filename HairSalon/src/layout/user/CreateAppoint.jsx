@@ -9,12 +9,17 @@ import { InputPage } from '../../components/Input/InputPage';
 import { useEffect } from 'react';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export const CreateAppoint = () => {
     const credentialsRdx = useSelector(userData);
     console.log(credentialsRdx.credentials.usuario)
+
+
+    const navigate = useNavigate();
+
 
 
     const [stylists, setStylists] = useState([
@@ -76,9 +81,17 @@ export const CreateAppoint = () => {
             .then(result => {
                 setAppointments(result.data)
             }).catch(error => { setAppointments(error.message) })
+
+            setTimeout(() => {
+                navigate("/appointments");
+        }, 250)
     }
 
-    console.log(appointments)
+
+
+    // console.log(appointments)
+
+
 
     return (
 

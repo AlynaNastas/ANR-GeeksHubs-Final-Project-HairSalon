@@ -6,6 +6,8 @@ import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/esm/Card';
 import Button from "react-bootstrap/esm/Button";
+import A17 from "../../assets/A17.jpeg"
+import Row from "react-bootstrap/esm/Row";
 
 export const UserAppoint = () => {
 
