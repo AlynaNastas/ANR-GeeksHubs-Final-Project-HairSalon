@@ -58,7 +58,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.6">
                                     News
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
+                                <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.7">
@@ -111,7 +111,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.6">
                                     News
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
+                                <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.7">
@@ -163,7 +163,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.6">
                                     News
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
+                                <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.7">
@@ -218,7 +218,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.6">
                                     News
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
+                                <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.7">
