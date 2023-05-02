@@ -15,6 +15,7 @@ import { SeeUsers } from "./layout/stylist/SeeUsers"
 import { UpdateProfile } from "./layout/user/UpdateProfile"
 import { Team } from "./layout/Team"
 import { Services } from "./layout/Services"
+import { Treatments } from "./layout/Treatments"
 
 
 
@@ -38,6 +39,7 @@ export const MainApp = () => {
     <Route path= '/updateprofile' element={<UpdateProfile/>}/>
     <Route path= '/team' element={<Team/>}/>
     <Route path= '/services' element={<Services/>}/>
+    <Route path= '/treatments' element={<Treatments/>}/>
 
   
     </Routes>

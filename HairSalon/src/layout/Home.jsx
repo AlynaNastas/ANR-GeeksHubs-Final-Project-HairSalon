@@ -82,8 +82,6 @@ export const Home = () => {
         We believe in making the ordinary extraordinary. As editors of artistic taste, we believe every guest deserves to look as beautiful as they are.
         </Col>
       </Row>
-
-
     </Container>
 
 
