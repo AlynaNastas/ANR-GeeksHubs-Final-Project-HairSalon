@@ -2,7 +2,6 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/esm/Container';
 import Figure from 'react-bootstrap/Figure';
-import A19 from "../assets/A19.jpeg"
 import A20 from "../assets/A20.jpeg"
 import A21 from "../assets/A21.jpg"
 import A23 from "../assets/A23.jpeg"
@@ -19,8 +18,10 @@ import A10 from "../assets/A10.jpg"
 import A38 from "../assets/A38.jpg"
 import A39 from "../assets/A39.png"
 import A27 from "../assets/A27.jpeg"
-import Row from 'react-bootstrap/esm/Row';
+import A31 from "../assets/A31.jpeg"
+import Team2 from "../assets/Team2.jpeg"
 import Col from 'react-bootstrap/esm/Col';
+import Row from 'react-bootstrap/esm/Row';
 
 
 
@@ -123,21 +124,10 @@ export const Team = () => {
           </Figure>
         </div>
 
-        {/* <Figure>
-          <Figure.Image
-            width={300}
-            height={70}
-            alt="300x70"
-            src={A18}
-          />
-          <Figure.Caption>
-            Fashion Salon collection
-          </Figure.Caption>
-        </Figure> */}
-        <Row className='justify-content-md-center mt-5 '>
+        <div className=' d-flex gap-5  mt-5 '>
           <Figure>
             <Figure.Image
-              width={500}
+              width={600}
               height={200}
               alt="300x70"
               src={A32}
@@ -145,16 +135,11 @@ export const Team = () => {
             <Figure.Caption>
               Velsvoir collection <p>Mens London Fashion Week</p>
             </Figure.Caption>
-            <Col className="simpleFont mt-5" xs="12" lg="6">
-              <h1> British GQ </h1>
-              <h3 className="blackFont">Men's Style, Fashion & Culture </h3>
-              <p>Taking place twice a year in February and September London Fashion Week showcases over 250 designers to a global audience.</p>
-            </Col>
           </Figure>
 
           <Figure>
             <Figure.Image
-              width={500}
+              width={600}
               height={70}
               alt="300x70"
               src={A33}
@@ -162,87 +147,130 @@ export const Team = () => {
             <Figure.Caption>
               British GQ Magazine 2021
             </Figure.Caption>
+            <Col className="simpleFont mt-5" xs="12" lg="6">
+              <h1> British GQ </h1>
+              <h3 className="blackFont">Men's Style, Fashion & Culture </h3>
+              <p>Taking place twice a year in February and September London Fashion Week showcases over 250 designers to a global audience.</p>
+            </Col>
           </Figure>
-        </Row>
+        </div>
+
+        <div className=' d-flex gap-5  mt-5'>
+          <Figure>
+            <Figure.Image
+              width={350}
+              height={70}
+              alt="300x70"
+              src={A10}
+            />
+            <Figure.Caption>
+              Make-up Wella Color Vision 2020
+            </Figure.Caption>
+          </Figure>
+
+          <Figure>
+            <Figure.Image
+              width={350}
+              height={70}
+              alt="300x70"
+              src={A39}
+            />
+            <Figure.Caption>
+              Catwalk Wella Color Vision 2020
+            </Figure.Caption>
+          </Figure>
+
+          <Figure>
+            <Figure.Image
+              width={620}
+              height={70}
+              alt="300x70"
+              src={A38}
+            />
+            <Figure.Caption>
+              Back Stage Wella Color Vision
+            </Figure.Caption>
+          </Figure>
+        </div>
+
+        <div className=' d-flex gap-3 mt-5'>
+          <Figure className='d-flex gap-5 '>
+            <Figure.Image
+              width={500}
+              height={180}
+              src={Team2}
+            />
+          </Figure>
+          <Row>
+            <Col className="simpleFont mt-5" xs="12" lg="12">
+              <Figure.Caption>
+                Fashion Competitions
+              </Figure.Caption>
+              <h1> Style & Colour Trophy </h1>
+              <h3 className=" blackFont">Champions professional excellence</h3>
+              <p>The L’Oréal Professionnel Style & Colour Trophy highlights the immense talent in the hair industry on national and then international platforms that celebrate this artistry.</p>
+            </Col>
+          </Row>
+        </div>
+
+        <div className=' d-flex gap-5  mt-5'>
+          <Figure className=' d-flex gap-5'>
+            <Figure.Image
+              width={450}
+              height={180}
+              src={A36}
+            />
+            <h1 className='blackFont'>Semi-Finals Colour Trophy 2020</h1>
+          </Figure>
+
+          <Figure>
+            <Figure.Image
+              width={500}
+              height={180}
+              src={A29}
+            />
+            <Figure.Caption>
+              Catwalk L´oreal Colour Trophy 2020
+            </Figure.Caption>
+          </Figure>
+        </div>
+
+        <div className='mt-5'>
+          <Figure>
+            <Figure.Image
+              width={600}
+              height={170}
+              src={A37}
+            />
+            <Col className="simpleFont mt-3" xs="12" lg="12">
+              <Figure.Caption>
+                Art, Culture & Fashion
+              </Figure.Caption>
+              <h1>Fashion Weeks </h1>
+              <h3 className="blackFont mb-5">Our way of being constantly expanding boundaries </h3>
+
+            </Col>
+          </Figure>
+        </div>
 
 
-        <Figure>
-          <Figure.Image
-            width={300}
-            height={70}
-            alt="300x70"
-            src={A29}
-          />
-          <Figure.Caption>
-            Catwalk L´oreal Color Tropy 2020
-          </Figure.Caption>
-        </Figure>
-
-
-        <Figure>
-          <Figure.Image
-            width={300}
-            height={70}
-            alt="300x70"
-            src={A38}
-          />
-          <Figure.Caption>
-            Back Stage Wella Color Vision
-          </Figure.Caption>
-        </Figure>
-
-        <Figure>
-          <Figure.Image
-            width={300}
-            height={70}
-            alt="300x70"
-            src={A10}
-          />
-          <Figure.Caption>
-            Make-up Wella Color Vision 2020
-          </Figure.Caption>
-        </Figure>
-
-        <Figure>
-          <Figure.Image
-            width={300}
-            height={70}
-            alt="300x70"
-            src={A39}
-          />
-          <Figure.Caption>
-            Catwalk Wella Color Vision 2020
-          </Figure.Caption>
-        </Figure>
-
-
-        <Figure>
-          <Figure.Image
-            width={300}
-            height={70}
-            alt="300x70"
-            src={A19}
-          />
-          <Figure.Caption>
-            Fashion Salon Collection
-          </Figure.Caption>
-        </Figure>
-
-
-        {/* <Figure>
-          <Figure.Image
-            width={300}
-            height={180}
-            alt="300x300"
-            src={A36}
-          />
-          <Figure.Caption>
-           Semi-Finals Color Tropy 2020
-          </Figure.Caption>
-        </Figure> */}
-
+        <div className='d-flex gap-5  mt-5'>
+          <Col className="simpleFont mt-5" xs="6" lg="6">
+            <h1> Salon Collections </h1>
+            <p className='mt-3'>“I wanted to create a pure collection with simple details, that represents my own personality. Something that catches the eye, that people can ask themselves “</p>
+          </Col>
+          <Figure>
+            <Figure.Image
+              width={500}
+              height={170}
+              src={A18}
+            />
+            <Figure.Caption>
+              Fashion Salon collection
+            </Figure.Caption>
+          </Figure>
+        </div>
       </Container>
-
     </>
   );
 }
