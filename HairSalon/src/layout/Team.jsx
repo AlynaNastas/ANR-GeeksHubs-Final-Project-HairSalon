@@ -18,7 +18,6 @@ import A10 from "../assets/A10.jpg"
 import A38 from "../assets/A38.jpg"
 import A39 from "../assets/A39.png"
 import A27 from "../assets/A27.jpeg"
-import A31 from "../assets/A31.jpeg"
 import Team2 from "../assets/Team2.jpeg"
 import Col from 'react-bootstrap/esm/Col';
 import Row from 'react-bootstrap/esm/Row';
