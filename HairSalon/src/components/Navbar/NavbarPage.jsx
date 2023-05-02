@@ -46,7 +46,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.1">
                                     Salon
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
+                                <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">
@@ -55,7 +55,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.4">
                                     Services
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.5">
+                                <NavDropdown.Item as={Link} to="/services">
                                     Our History
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.6">
@@ -111,7 +111,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.4">
                                     Services
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.5">
+                                <NavDropdown.Item as={Link} to="/services">
                                     Our History
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.6">
@@ -163,7 +163,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.3">
                                     Treatments
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">
+                                <NavDropdown.Item as={Link} to="/services">
                                     Services
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.5">
@@ -221,7 +221,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item href="#action/3.3">
                                     Treatments
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">
+                                <NavDropdown.Item as={Link} to="/services">
                                     Services
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.5">

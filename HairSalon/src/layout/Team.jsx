@@ -83,7 +83,7 @@ export const Team = () => {
               src={A20}
             />
             <Figure.Caption >
-              Lóreal color trophy 2019
+              L`oreal colour trophy 2019
             </Figure.Caption>
           </Figure>
 
@@ -95,7 +95,7 @@ export const Team = () => {
               src={A21}
             />
             <Figure.Caption>
-              Shoot Color Tropy 2019
+              Shoot Colour Tropy 2019
             </Figure.Caption>
           </Figure>
 
@@ -107,7 +107,7 @@ export const Team = () => {
               src={A23}
             />
             <Figure.Caption>
-              L´oreal Color Trophy 2020
+              L´oreal Colour Trophy 2020
             </Figure.Caption>
           </Figure>
 
@@ -119,7 +119,7 @@ export const Team = () => {
               src={A24}
             />
             <Figure.Caption>
-              Shoot Color Trophy 2020
+              Shoot Colour Trophy 2020
             </Figure.Caption>
           </Figure>
         </div>
@@ -164,7 +164,7 @@ export const Team = () => {
               src={A10}
             />
             <Figure.Caption>
-              Make-up Wella Color Vision 2020
+              Make-up Wella Colour Vision 2020
             </Figure.Caption>
           </Figure>
 
@@ -176,7 +176,7 @@ export const Team = () => {
               src={A39}
             />
             <Figure.Caption>
-              Catwalk Wella Color Vision 2020
+              Catwalk Wella Colour Vision 2020
             </Figure.Caption>
           </Figure>
 
@@ -188,7 +188,7 @@ export const Team = () => {
               src={A38}
             />
             <Figure.Caption>
-              Back Stage Wella Color Vision
+              Back Stage Wella Colour Vision
             </Figure.Caption>
           </Figure>
         </div>
