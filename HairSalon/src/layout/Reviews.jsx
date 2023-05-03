@@ -1,5 +1,5 @@
-import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
+import Figure from 'react-bootstrap/Figure';
 
 import R1 from "../assets/R1.png"
 import R2 from "../assets/R2.png"
@@ -15,20 +15,56 @@ export const Reviews = () => {
         <>
             <Container className="container-fluid mt-5 mb-5">
                 <div className='mb-5 mt-5'>
-                    <Image src={RG3} style={{ objectFit: 'none' }} />
+                    <Figure>
+                        <Figure.Image
+                            width={800}
+                            height={300}
+                            src={RG3}
+                        />
+                    </Figure>
                 </div>
                 <div className='mb-5 mt-5'>
-                    <Image  src={RG1} style={{ objectFit: 'none' }} />
+                    <Figure>
+                        <Figure.Image
+                            width={800}
+                            height={300}
+                            src={RG1}
+                        />
+                    </Figure>
                 </div>
                 <div className='mb-5 mt-5'>
-                    <Image src={RG2} style={{ objectFit: 'none' }} />
+                    <Figure>
+                        <Figure.Image
+                            width={800}
+                            height={300}
+                            src={RG2}
+                        />
+                    </Figure>
                 </div>
-                <Image src={R4} style={{ objectFit: 'none' }} />
+                <Figure>
+                    <Figure.Image
+                        width={800}
+                        height={300}
+                        src={R4}
+                    />
+                </Figure>
                 <div className='mb-5 mt-5'>
-                    <Image src={R2} style={{ objectFit: 'none' }} />
+                    <Figure>
+                        <Figure.Image
+                            width={800}
+                            height={300}
+                            src={R2}
+                        />
+                    </Figure>
                 </div>
                 <div className='mb-5 mt-5'>
-                    <Image src={R1} style={{ objectFit: 'none' }} />
+                    <Figure>
+                        <Figure.Image
+                            width={800}
+                            height={300}
+                            src={R1}
+                        />
+                    </Figure>
                 </div>
             </Container>
 

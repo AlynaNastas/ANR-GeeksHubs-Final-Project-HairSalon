@@ -4,8 +4,7 @@ export const validation = (name, info, required) => {
     switch (name) {
         case "name":
         case "surname":
-        case "nombre":
-        case "apellido":
+    
 
 
             if (info === "" && required === true) {
@@ -40,10 +39,9 @@ export const validation = (name, info, required) => {
             return { message: "", validation: true };
 
 
-        case "phone":
-        case "teléfono":
         case "telephone number":
         case "tel":
+        case "phone":
             if (info === "" && required === true) {
                 return { message: "Please fill the field", validation: false };
             } else if (!/\+?\(?\d{2,4}\)?[\d\s-]{9}/.test(info)) {
@@ -55,18 +53,19 @@ export const validation = (name, info, required) => {
         case "Date of Birth":
         case "birth_date":
 
+                const isBefore2008 = (date) => {
+                  const maxDate = dayjs('05-05-2008');
+                  return dayjs(date).isBefore(maxDate, 'day');
+                };
+                  if (info === "" && required === true) {
+                    return { message: "Please fill the field", validation: false };
+                  } else if (!isBefore2008(info)) {
+                    return { message: "Please fill with a date before 2008", validation: false };
+                  } else {
+                    return { message: "", validation: true };
+                  }
 
-            let fecha_hoy = dayjs();
 
-            let years = fecha_hoy.diff(info, 'years');
-
-            if (years < 15) {
-                return { message: "You must be 15 or be authorized by an adult", validation: false };
-
-            }
-
-            
-            return { message: "", validation: true };
 
 
 

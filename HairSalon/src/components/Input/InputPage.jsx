@@ -1,6 +1,6 @@
 import Form from 'react-bootstrap/Form'
 
-export const InputPage = ({className, type, name, placeholder, changeFunction, blurFunction}) => {
+export const InputPage = ({required, maxLength, className, type, name, placeholder, changeFunction, blurFunction}) => {
   return (
     <>
     <Form.Control
@@ -10,6 +10,8 @@ export const InputPage = ({className, type, name, placeholder, changeFunction, b
         placeholder={placeholder}
         onChange={(e)=>changeFunction(e)}
         onBlur={(e)=>blurFunction(e)}
+        required={required}
+        maxLength={maxLength}
     />
     </>
   )

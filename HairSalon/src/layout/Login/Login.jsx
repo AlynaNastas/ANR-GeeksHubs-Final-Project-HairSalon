@@ -141,12 +141,12 @@ export const Login = () => {
                     dispatch(login({ credentials: datosBackend }));
 
 
-                    setWelcome(`Hi, there! ${datosBackend.usuario.name}`);
+                    //setWelcome(`Hi, there! ${datosBackend.usuario.name}`);
 
 
 
                     setTimeout(() => {
-                        navigate("/home");
+                        navigate("/");
                     }, 3000);
                 }
             )

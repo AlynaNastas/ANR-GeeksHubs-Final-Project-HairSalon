@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteAppointAdmin, viewAdminapp } from "../../services/apiCalls";
 import { userData } from "../../userSlice";
+import Spinner from 'react-bootstrap/Spinner';
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/esm/Card';
 import Button from "react-bootstrap/esm/Button";
@@ -38,7 +39,9 @@ export const SeeAppoint = () => {
 
     const selected = (app2) => {
 console.log(app2)
-        deleteAppointAdmin( credentialRdx.credentials.token)
+        deleteAppointAdmin(app2.id, credentialRdx.credentials.token)
+
+              //setWelcome(`deleted correctly`);
 
     
 }
@@ -78,7 +81,7 @@ console.log(app2)
                             }
                         </div>
                     ) : (
-                        <div>coming ... </div>
+                        <Spinner animation="border" />
                     )}
             </div>
     

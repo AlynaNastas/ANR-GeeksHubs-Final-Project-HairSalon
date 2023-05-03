@@ -101,7 +101,6 @@ export const deleteAppoint = async (id, token) => {
             'Authorization': `Bearer ${token}`
         }
     };
-
     return await axios.delete(`${root}/appoint/${id}`, config)
 };
 

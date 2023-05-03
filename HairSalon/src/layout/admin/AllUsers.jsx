@@ -5,6 +5,7 @@ import { bringUsers } from "../../services/apiCalls";
 import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Spinner from 'react-bootstrap/Spinner';
 import { addChoosen } from "../../detailSlice";
 import "./AllUsers.css"
 
@@ -76,7 +77,7 @@ export const AllUsers = () => {
 
                     :
 
-                    (<div>coming...</div>)
+                    (<Spinner animation="border" />)
 
                 }
 

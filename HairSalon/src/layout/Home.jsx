@@ -7,7 +7,6 @@ import A15 from "../assets/A15.jpeg"
 import A16 from "../assets/A16.jpeg"
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Figure from 'react-bootstrap/Figure';
 

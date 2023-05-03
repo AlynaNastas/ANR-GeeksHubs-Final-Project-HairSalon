@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Spinner from 'react-bootstrap/Spinner';
 import { UsersByStylist } from "../../services/apiCalls";
 
 
@@ -75,7 +76,7 @@ export const SeeUsers = () => {
 
                     :
 
-                    (<div>coming...</div>)
+                    (<Spinner animation="border" />)
 
                 }
 

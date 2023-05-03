@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/esm/Card';
+import Spinner from 'react-bootstrap/Spinner';
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { viewAppointments } from "../../services/apiCalls";
@@ -58,7 +59,7 @@ export const AllAppoint = () => {
                             }
                         </div>
                     ) : (
-                        <div>coming ... </div>
+                        <Spinner animation="border" />
                     )}
                 </div>
     

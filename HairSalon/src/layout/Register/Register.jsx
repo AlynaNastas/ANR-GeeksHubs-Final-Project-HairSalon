@@ -26,6 +26,7 @@ export const Register = () => {
 
     })
 
+    console.log(credentials, "cred")
 
     const inputHandler = (e) => {
         setCredentials((prevState) => ({
@@ -52,7 +53,8 @@ export const Register = () => {
         birth_dateValidated: '',
         phoneValidated: '',
 
-    })
+    });
+    console.log(validatedCredentials, "vali")
 
 
     const [registerAct, setRegisterAct] = useState(false);
@@ -144,13 +146,14 @@ export const Register = () => {
                                 name={'name'}
                                 placeholder={"Enter Name"}
                                 changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
+                                blurFunction={(e) => checkError(e)} 
+                                maxLength={100}/>
 
                             <Form.Text className="text-muted">
                                 We'll never share your private information with anyone else.
                             </Form.Text>
                         </Form.Group>
-
+                        <div className='RedError'>{credentialsError.nameError}</div>
                         <Form.Group className="mb-3" controlId="formBasicSurname">
                             <Form.Label>Surname</Form.Label>
                             <InputPage
@@ -160,11 +163,12 @@ export const Register = () => {
                                 name={'surname'}
                                 placeholder={"Enter Surname"}
                                 changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
+                                blurFunction={(e) => checkError(e)}
+                                maxLength={110} />
                             <Form.Text className="text-muted">
                             </Form.Text>
                         </Form.Group>
-
+                        <div className='RedError'>{credentialsError.surnameError}</div>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email adress</Form.Label>
                             <InputPage
@@ -173,7 +177,11 @@ export const Register = () => {
                                 name={'email'}
                                 placeholder={"Enter email"}
                                 changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
+                                blurFunction={(e) => checkError(e)} 
+                                required={true}
+                                maxLength={50}
+                                />
+                                
 
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
@@ -189,9 +197,12 @@ export const Register = () => {
                                 name={'password'}
                                 placeholder={'Introduce your password'}
                                 changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
+                                blurFunction={(e) => checkError(e)}
+                                required={true}
+                                maxLength={30}
+                                />
                         </Form.Group>
-
+                        <div className='RedError'>{credentialsError.passwordError}</div>
                         <Form.Group className="mb-3" controlId="formBasicBirth">
                             <Form.Label>Birth Date</Form.Label>
                             <InputPage
@@ -201,11 +212,13 @@ export const Register = () => {
                                 name={'birth_date'}
                                 placeholder={"Enter your date of birth"}
                                 changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
+                                blurFunction={(e) => checkError(e)}
+                                required={true}
+                                />
                             <Form.Text className="text-muted">
                             </Form.Text>
                         </Form.Group>
-
+                        <div className='RedError'>{credentialsError.birth_dateError}</div>
                         <Form.Group className="mb-3" controlId="formBasicPhone">
                             <Form.Label>Phone</Form.Label>
                             <InputPage
@@ -214,7 +227,10 @@ export const Register = () => {
                                 name={'phone'}
                                 placeholder={"Enter your phone number"}
                                 changeFunction={(e) => inputHandler(e)}
-                                blurFunction={(e) => checkError(e)} />
+                                blurFunction={(e) => checkError(e)}
+                                required={true}
+                                maxLength={15}
+                                />
                             <Form.Text className="text-muted">
                                 Phone number must include country code ex. (+00)
                             </Form.Text>

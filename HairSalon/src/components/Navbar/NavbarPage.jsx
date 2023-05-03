@@ -27,7 +27,7 @@ export const NavbarPage = () => {
 
         return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
-                <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -75,7 +75,7 @@ export const NavbarPage = () => {
 
         return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
-                <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -119,7 +119,8 @@ export const NavbarPage = () => {
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </>
-                        <Nav.Link onClick={logout} as={Link} to="/home">Logout</Nav.Link>
+                        <Navbar className="home">Hello back, {dataCredentialsRdx.credentials.usuario.name}! </Navbar>
+                        <Nav.Link onClick={logout} as={Link} to="/">Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -130,7 +131,7 @@ export const NavbarPage = () => {
 
         return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
-                <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -171,7 +172,8 @@ export const NavbarPage = () => {
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </>
-                        <Nav.Link onClick={logout} as={Link} to="/home">Logout</Nav.Link>
+                        <Navbar className="home">Hello back, {dataCredentialsRdx.credentials.usuario.name}! </Navbar>
+                        <Nav.Link onClick={logout} as={Link} to="/">Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -182,7 +184,7 @@ export const NavbarPage = () => {
 
         return <Navbar className="fontStyle" bg="dark" expand="lg" variant="dark">
             <Container>
-                <Navbar.Brand as={Link} to="/home">Art&Beauty AN</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">Art&Beauty AN</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -227,7 +229,8 @@ export const NavbarPage = () => {
 
                             </NavDropdown>
                         </>
-                        <Nav.Link onClick={logout} as={Link} to="/home">Logout</Nav.Link>
+                        <Navbar className="home">Hi, {dataCredentialsRdx.credentials.usuario.name}!</Navbar>
+                        <Nav.Link onClick={logout} as={Link} to="/">Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

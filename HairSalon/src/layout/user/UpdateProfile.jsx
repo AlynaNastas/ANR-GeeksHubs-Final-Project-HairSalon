@@ -21,11 +21,9 @@ export const UpdateProfile = () => {
  
     const [profile, setProfile] = useState({
         id: credentialRdx.credentials.usuario.userId,
-        // name:"",
-        // surname:"",
-        //email:"",
-        //password:"",
-        // birth_date:"",
+        name:"",
+        surname:"",
+        birth_date:"",
         phone:""
       });
       const inputHandler = (e) => {
@@ -60,7 +58,8 @@ return (
                       name={'name'}
                       placeholder={credentialRdx.credentials.usuario.name}
                       changeFunction={(e) => inputHandler(e)}
-                      blurFunction={(e) => checkError(e)} />
+                      blurFunction={(e) => checkError(e)}
+                      maxLength={60} />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicSurname">
@@ -71,19 +70,20 @@ return (
                       name={'surname'}
                       placeholder={credentialRdx.credentials.usuario.surname}
                       changeFunction={(e) => inputHandler(e)}
-                      blurFunction={(e) => checkError(e)} />
+                      blurFunction={(e) => checkError(e)} 
+                      maxLength={100}/>
               </Form.Group>
 
-              {/* <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Email</Form.Label>
+              <Form.Group className="mb-3" controlId="formBasicSurname">
+                  <Form.Label>Birth date</Form.Label>
                   <InputPage
                       className={'InputBasic'}
-                      type={'text'}
-                      name={'email'}
-                      placeholder={credentialRdx.credentials.usuario.email}
+                      type={'date'}
+                      name={'birth_date'}
+                      placeholder={credentialRdx.credentials.usuario.birth_date}
                       changeFunction={(e) => inputHandler(e)}
                       blurFunction={(e) => checkError(e)} />
-              </Form.Group> */}
+              </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPhone">
                   <Form.Label>Phone</Form.Label>
@@ -93,19 +93,9 @@ return (
                       name={'phone'}
                       placeholder={credentialRdx.credentials.usuario.phone}
                       changeFunction={(e) => inputHandler(e)}
-                      blurFunction={(e) => checkError(e)} />
+                      blurFunction={(e) => checkError(e)}
+                      maxLength={15} />
               </Form.Group>
-
-              {/* <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>New password</Form.Label>
-                  <InputPage
-                      className={'InputBasic'}
-                      type={'password'}
-                      name={'password'}
-                      placeholder={''}
-                      changeFunction={(e) => inputHandler(e)}
-                      blurFunction={(e) => checkError(e)} />
-              </Form.Group>  */}
 
 
               <div className='button2'>
