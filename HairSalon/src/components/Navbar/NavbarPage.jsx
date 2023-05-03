@@ -116,7 +116,7 @@ export const NavbarPage = () => {
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </>
-                        <Navbar className="home">Hello back, {dataCredentialsRdx.credentials.usuario.name}! </Navbar>
+                        <Navbar className="home">Hi, {dataCredentialsRdx.credentials.usuario.name}! </Navbar>
                         <Nav.Link onClick={logout} as={Link} to="/">Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
@@ -169,7 +169,7 @@ export const NavbarPage = () => {
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </>
-                        <Navbar className="home">Hello back, {dataCredentialsRdx.credentials.usuario.name}! </Navbar>
+                        <Navbar className="home">Hi, {dataCredentialsRdx.credentials.usuario.name}! </Navbar>
                         <Nav.Link onClick={logout} as={Link} to="/">Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
