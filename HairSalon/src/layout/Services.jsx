@@ -110,6 +110,18 @@ export const Services = () => {
           </tbody>
         </Table>
       </div>
+
+    <div>
+      <h3 className='simpleFont'>SKIN COLOUR TEST</h3>
+      <p className='blackFont'>If you’re new to colour at Trevor Sorbie or haven’t had colour with us within the last 6 months,
+        please contact the salon to arrange a colour skin test. This must be atleast 48 hours before your appointment.</p>
+    </div>
+
+  <div className='simpleFont mb-5'>
+    <h3>CANCELLATION POLICY</h3>
+    <p>You can cancel your appointment up to 24 hours before your service time.
+      If you do cancel or fail to turn up after 24 hours you will be charged 100% of the fee.</p>
+  </div>
     </>
   );
 }
