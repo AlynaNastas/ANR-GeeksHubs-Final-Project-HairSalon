@@ -1,6 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/esm/Row';
+import Col from 'react-bootstrap/esm/Col';
 import { InputPage } from '../../components/Input/InputPage';
 import { useEffect, useState } from 'react';
 import { validation } from '../../helpers/Validations';
@@ -10,10 +12,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { login, userData } from '../../userSlice';
 import { decodeToken } from "react-jwt";
 import './Login.css';
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col';
-
-
 
 
 
@@ -42,7 +40,6 @@ export const Login = () => {
     }
 
 
-
     const [credentialsError, setCredentialsError] = useState({
         emailError: '',
         passwordError: '',
@@ -58,10 +55,7 @@ export const Login = () => {
 
     const [loginAct, setLoginAct] = useState(false);
 
-
     const [welcome, setWelcome] = useState("");
-
-
 
     useEffect(() => {
 
@@ -140,10 +134,7 @@ export const Login = () => {
 
                     dispatch(login({ credentials: datosBackend }));
 
-
                     //setWelcome(`Hi, there! ${datosBackend.usuario.name}`);
-
-
 
                     setTimeout(() => {
                         navigate("/");
@@ -158,55 +149,51 @@ export const Login = () => {
             {welcome !== "" ? (
                 <div>{welcome}</div>
             ) : (
-
                 <div className='Main mt-5 mb-5'>
-                
                     <Container className='simpleFont'>
-                    <Row className='justify-content-center' >
-                    <Col xs={12} sm={8} lg={4} >
-                        <div>
-                            <Form>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
+                        <Row className='justify-content-center' >
+                            <Col xs={12} sm={8} lg={4} >
+                                <div>
+                                    <Form>
+                                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                                            <Form.Label>Email address</Form.Label>
+                                            <InputPage
+                                                className={'InputBasic'}
+                                                type={"email"}
+                                                name={'email'}
+                                                placeholder={"Enter email"}
+                                                changeFunction={(e) => inputHandler(e)}
+                                                blurFunction={(e) => checkError(e)} />
+                                            <Form.Text className="text-muted">
+                                                We'll never share your email with anyone else.
+                                            </Form.Text>
+                                            <div className='RedError'>{credentialsError.emailError}</div>
+                                        </Form.Group>
 
-                                    <InputPage
-                                        className={'InputBasic'}
-                                        type={"email"}
-                                        name={'email'}
-                                        placeholder={"Enter email"}
-                                        changeFunction={(e) => inputHandler(e)}
-                                        blurFunction={(e) => checkError(e)} />
-
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
-                                    <div className='RedError'>{credentialsError.emailError}</div>
-                                </Form.Group>
-
-                                <Form.Group className="mb-3" controlId="formBasicPassword">
-                                    <Form.Label>Password</Form.Label>
-                                    <InputPage
-                                        className={'InputBasic'}
-                                        type={'password'}
-                                        name={'password'}
-                                        placeholder={'Introduce your password'}
-                                        changeFunction={(e) => inputHandler(e)}
-                                        blurFunction={(e) => checkError(e)} />
-                                    <div className='RedError'>{credentialsError.passwordError} </div>
-                                </Form.Group>
-                                <div className='button2'>
-                                <Button 
-                                        onClick={loginAct ? () => { logmee(); } : () => { }} variant="dark">
-                                        Submit
-                                    </Button>
+                                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                                            <Form.Label>Password</Form.Label>
+                                            <InputPage
+                                                className={'InputBasic'}
+                                                type={'password'}
+                                                name={'password'}
+                                                placeholder={'Introduce your password'}
+                                                changeFunction={(e) => inputHandler(e)}
+                                                blurFunction={(e) => checkError(e)} />
+                                            <div className='RedError'>{credentialsError.passwordError} </div>
+                                        </Form.Group>
+                                        <div className='button2'>
+                                            <Button
+                                                onClick={loginAct ? () => { logmee(); } : () => { }} variant="dark">
+                                                Submit
+                                            </Button>
+                                        </div>
+                                    </Form>
                                 </div>
-                            </Form>
-                        </div>
-                        </Col>
+                            </Col>
                         </Row>
                     </Container>
                 </div>
             )}
         </div>
     );
-};
+}
