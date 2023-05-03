@@ -1,10 +1,10 @@
+import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
+import Spinner from 'react-bootstrap/Spinner';
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { userData } from "../../userSlice";
-import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import Spinner from 'react-bootstrap/Spinner';
 import { UsersByStylist } from "../../services/apiCalls";
 
 
@@ -30,7 +30,6 @@ export const SeeUsers = () => {
                 )
                 .catch(error => console.log(error))
         }
-
     }, [user])
 
     const selected = (byProfessional) => {
@@ -44,15 +43,12 @@ export const SeeUsers = () => {
     return (
         <div>
             <Container>
-
                 {user.length > 0 ?
-
                     (<div>
                         {
                             user.map(
                                 pro => {
                                     return (
-
                                         <>
                                             <Container className="blackFont container-fluid mt-5 mb-5 text-center">
                                                 <Card>
@@ -73,14 +69,10 @@ export const SeeUsers = () => {
                             )
                         }
                     </div>)
-
                     :
-
                     (<Spinner animation="border" />)
-
                 }
-
             </Container>
         </div>
-  )
+    );
 }
