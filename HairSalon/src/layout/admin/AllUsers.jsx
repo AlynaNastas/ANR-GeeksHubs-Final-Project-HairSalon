@@ -55,9 +55,9 @@ export const AllUsers = () => {
                                     return (
                                     
                                         <>
-                                            <Container className="fontStyle"> 
-                                                <Card className='smallCard'>
-                                                    <Card.Body
+                                            <Container className="blackFont container-fluid mt-5 mb-5 text-center"> 
+                                                <Card>
+                                                    <Card.Body className="colour"
                                                         onClick={() => selected()}
                                                         key={unique.id} >
                                                         <Card.Title>Name:&nbsp; {unique.name} </Card.Title>

@@ -1,9 +1,9 @@
-.RedError{
-    color:crimson;
-}
 .simpleFont{
     font-family: 'Montserrat', sans-serif;
 }
 .blackFont{
     font-family: 'Bebas Neue', cursive;
+}
+.colour{
+    background-color: rgb(199, 199, 200) ;
 }

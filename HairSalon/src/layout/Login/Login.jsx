@@ -154,12 +154,12 @@ export const Login = () => {
 
     };
     return (
-        <div className="logDesign">
+        <div >
             {welcome !== "" ? (
                 <div>{welcome}</div>
             ) : (
 
-                <div className='Main'>
+                <div className='Main mt-5 mb-5'>
                 
                     <Container className='simpleFont'>
                     <Row className='justify-content-center' >

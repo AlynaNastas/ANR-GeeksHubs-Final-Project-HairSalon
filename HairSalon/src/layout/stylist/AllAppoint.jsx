@@ -36,9 +36,9 @@ export const AllAppoint = () => {
                                     app => {
                                         return (
                                 <>
-                                    <Container>
-                                        <Card className='midiumCard'>
-                                            <Card.Body
+                                    <Container className="blackFont container-fluid mt-5 mb-5 text-center">
+                                        <Card>
+                                            <Card.Body className='colour'
                                                 onClick={() => selected(app)}
                                                 key={app.id} >
                                                 <Card.Title>Name:&nbsp; {app?.Client?.User?.name} </Card.Title>

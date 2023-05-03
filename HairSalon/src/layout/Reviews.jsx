@@ -1,4 +1,5 @@
 import Image from 'react-bootstrap/Image';
+import Container from 'react-bootstrap/Container';
 
 import R1 from "../assets/R1.png"
 import R2 from "../assets/R2.png"
@@ -12,24 +13,24 @@ import R4 from "../assets/R4.png"
 export const Reviews = () => {
     return (
         <>
-            <div className='fixed-panel'>
-                <div className='container-fluid mb-5 mt-5'>
-                    <Image className='d-block mx-auto' src={RG3} style={{ objectFit: 'none' }} />
+            <Container className="container-fluid mt-5 mb-5">
+                <div className='mb-5 mt-5'>
+                    <Image src={RG3} style={{ objectFit: 'none' }} />
                 </div>
-                <div className='container-fluid'>
-                    <Image className='d-block mx-auto' src={RG1} style={{ objectFit: 'none' }} />
+                <div className='mb-5 mt-5'>
+                    <Image  src={RG1} style={{ objectFit: 'none' }} />
                 </div>
-                <div className='container-fluid'>
-                    <Image className='d-block mx-auto' src={RG2} style={{ objectFit: 'none' }} />
+                <div className='mb-5 mt-5'>
+                    <Image src={RG2} style={{ objectFit: 'none' }} />
                 </div>
-                <Image className='d-block mx-auto' src={R4} style={{ objectFit: 'none' }} />
-                <div className='container-fluid'>
-                    <Image responsive className='d-block mx-auto' src={R2} style={{ objectFit: 'none' }} />
+                <Image src={R4} style={{ objectFit: 'none' }} />
+                <div className='mb-5 mt-5'>
+                    <Image src={R2} style={{ objectFit: 'none' }} />
                 </div>
-                <div className='container-fluid'>
-                    <Image className='d-block mx-auto' src={R1} style={{ objectFit: 'none' }} />
+                <div className='mb-5 mt-5'>
+                    <Image src={R1} style={{ objectFit: 'none' }} />
                 </div>
-            </div>
+            </Container>
 
         </>
     )

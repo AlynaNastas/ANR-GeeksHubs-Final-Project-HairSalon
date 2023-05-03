@@ -52,11 +52,11 @@ console.log(app2)
                                     app => {
                                         return (
                                 <>
-                                    <Container className='simpleFont'>
+                                    <Container className="blackFont container-fluid mt-5 mb-5 text-center">
                                         
-                                        <Card className='midiumCard'>
+                                        <Card>
                                         <Row>
-                                            <Card.Body
+                                            <Card.Body className="colour"
                                                 key={app.id} >
                                                 <Card.Title>Name:&nbsp; {app?.Client?.User?.name} </Card.Title>
                                                 <Card.Title>Surname:&nbsp; {app?.Client?.User?.surname} </Card.Title>

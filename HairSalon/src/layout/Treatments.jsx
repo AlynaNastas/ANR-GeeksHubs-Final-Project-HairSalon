@@ -14,7 +14,7 @@ import Kera from "../assets/Kera.jpeg"
 export const Treatments = () => {
     return (
         <>
-            <div className="blackFont mt-5">
+            <div className="blackFont container-fluid mt-5 mb-5 text-center">
                 <Carousel>
                     <Carousel.Item>
                         <img

@@ -14,8 +14,8 @@ import Row from 'react-bootstrap/Row';
 export const Home = () => {
   return (
 
-    <Container  className="mt-3" fluid="md">
-      <Row className="justify-content-md-center">
+    <Container  className="container-fluid mt-5" fluid="sm">
+      <Row>
         <Col xs="12" lg="6">
           <Image src={A2} rounded />
         </Col>
@@ -26,7 +26,6 @@ export const Home = () => {
           <p>Book now with our award-winning team and enjoy beautiful hair.</p>
         </Col>
       </Row>
-
 
       <Row>
         <Col className="simpleFont mt-5" xs="12" lg="6">
@@ -77,14 +76,13 @@ export const Home = () => {
         </Col>
         <Col className="mt-5 " md="auto"> Experts in creating beautiful hair and client confidence.
         <h4 className="blackFont mt-3">Our team will help you to choose your new style.</h4>
-         </Col>
+          </Col>
         <Col className="mt-3" xs lg="7">
         We believe in making the ordinary extraordinary. As editors of artistic taste, we believe every guest deserves to look as beautiful as they are.
         </Col>
       </Row>
     </Container>
 
-
-  );
-}
+  )
+};
 

@@ -53,9 +53,9 @@ export const SeeUsers = () => {
                                     return (
 
                                         <>
-                                            <Container>
-                                                <Card className='smallCard'>
-                                                    <Card.Body
+                                            <Container className="blackFont container-fluid mt-5 mb-5 text-center">
+                                                <Card>
+                                                    <Card.Body className="colour"
                                                         onClick={() => selected(pro)}
                                                         key={pro.id} >
                                                         <Card.Title>Name:&nbsp; {pro.name} </Card.Title>

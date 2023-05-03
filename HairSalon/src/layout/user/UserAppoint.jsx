@@ -59,9 +59,9 @@ export const UserAppoint = () => {
                                     return (
 
                                         <>
-                                            <Container >
-                                                <Card className='midiumCard'>
-                                                    <Card.Body
+                                            <Container className="blackFont container-fluid mt-5 mb-5 text-center">
+                                                <Card>
+                                                    <Card.Body className="colour"
                                                         key={unique.id} >
                                                         <Card.Title>Name:&nbsp; {unique?.Client?.User.name} </Card.Title>
                                                         <Card.Title>Surname:&nbsp; {unique?.Client?.User.surname} </Card.Title>

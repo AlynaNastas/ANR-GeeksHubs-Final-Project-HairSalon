@@ -27,7 +27,7 @@ import Row from 'react-bootstrap/esm/Row';
 export const Team = () => {
   return (
     <>
-      <Container className=' justify-content-md blackFont mt-5' >
+      <Container className='justify-content-md blackFont mt-5' >
 
 
 

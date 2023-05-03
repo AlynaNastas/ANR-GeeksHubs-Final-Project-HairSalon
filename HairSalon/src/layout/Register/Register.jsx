@@ -131,7 +131,7 @@ export const Register = () => {
 
     return (
         <>
-                <Container className='simpleFont'>
+                <Container className='simpleFont mt-5 mb-5'>
                 <Row className='justify-content-center' >
                     <Col xs={12} sm={10} lg={8} >
                     <Form>

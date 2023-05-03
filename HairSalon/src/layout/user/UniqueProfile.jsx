@@ -43,9 +43,9 @@ export const UniqueProfile = () => {
 
         <>
 
-            <Container className='simpleFont'>
-                <Card className='smallCard'>
-                    <Card.Body>
+            <Container className='blackFont container-fluid mt-5 mb-5 text-center'>
+                <Card>
+                    <Card.Body className='colour'>
                         <Card.Title>Name:&nbsp; {user.name} </Card.Title>
                         <Card.Title>Surname:&nbsp; {user.surname} </Card.Title>
                         <Card.Title>Birth date:&nbsp; {user.birth_date} </Card.Title>

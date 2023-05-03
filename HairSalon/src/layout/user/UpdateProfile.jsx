@@ -44,12 +44,12 @@ export const UpdateProfile = () => {
               console.log(credentialRdx.credentials.token)
           );
   }
-console.log(profile, "lalalal")
+console.log(profile)
 
 return (
 
-  <div className='Reg'>
-      <Container className='simpleFont'>
+  
+      <Container className='simpleFont mt-5 m-b5 '>
           <Form>
 
               <Form.Group className="mb-3" controlId="formBasicName">
@@ -110,13 +110,13 @@ return (
 
               <div className='button2'>
                   <Button
-                      onClick={buttonUp} variant="primary">
+                      onClick={buttonUp} variant="dark">
                       Submit
                   </Button>
               </div>
           </Form>
       </Container>
-  </div>
+
 
 );
 }
