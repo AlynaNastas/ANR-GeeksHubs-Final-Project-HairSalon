@@ -26,8 +26,6 @@ export const Register = () => {
 
     })
 
-    console.log(credentials, "cred")
-
     const inputHandler = (e) => {
         setCredentials((prevState) => ({
             ...prevState,
@@ -54,8 +52,6 @@ export const Register = () => {
         phoneValidated: '',
 
     });
-    console.log(validatedCredentials, "vali")
-
 
     const [registerAct, setRegisterAct] = useState(false);
 
@@ -118,8 +114,6 @@ export const Register = () => {
     };
 
     const registerMe = () => {
-
-        console.log(credentials)
 
         registUser(credentials)
             .then((results) => {

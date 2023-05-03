@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
+import { useDispatch, useSelector } from "react-redux";
+import { userData, userout } from "../../userSlice";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { useDispatch, useSelector } from "react-redux";
-import { userData, userout } from "../../userSlice";
-import "../Navbar/NavbarPage.css"
+import "../Navbar/NavbarPage.css";
 
 
 
@@ -46,7 +46,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
-                                <NavDropdown.Item  as={Link} to="/treatments">
+                                <NavDropdown.Item as={Link} to="/treatments">
                                     Treatments
                                 </NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/services">
@@ -89,9 +89,6 @@ export const NavbarPage = () => {
                             <Nav.Link as={Link} to="/viewadminapp">
                                 View all appointments
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/roles">
-                                View roles
-                            </Nav.Link>
                             <Nav.Link as={Link} to="/profile">
                                 Profile
                             </Nav.Link>
@@ -99,7 +96,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
-                                <NavDropdown.Item  as={Link} to="/treatments">
+                                <NavDropdown.Item as={Link} to="/treatments">
                                     Treatments
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.4">
@@ -152,7 +149,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
-                                <NavDropdown.Item  as={Link} to="/treatments">
+                                <NavDropdown.Item as={Link} to="/treatments">
                                     Treatments
                                 </NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/services">
@@ -208,7 +205,7 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/team">
                                     Team
                                 </NavDropdown.Item>
-                                <NavDropdown.Item  as={Link} to="/treatments">
+                                <NavDropdown.Item as={Link} to="/treatments">
                                     Treatments
                                 </NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/services">
@@ -236,7 +233,6 @@ export const NavbarPage = () => {
             </Container>
         </Navbar>
     }
-
 }
 
 

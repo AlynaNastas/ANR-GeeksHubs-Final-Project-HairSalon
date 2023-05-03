@@ -6,7 +6,6 @@ import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Spinner from 'react-bootstrap/Spinner';
-import { addChoosen } from "../../detailSlice";
 import "./AllUsers.css"
 
 
@@ -36,19 +35,15 @@ export const AllUsers = () => {
     }, [user])
 
     const selected = () => {
-
-      //  dispatch(addChoosen({ choosenObject: buttons }))
-
         setTimeout(() => {
             navigate("/appointments");
         }, 250)
     }
+
     return (
         <div>
             <Container>
-
                 {user.length > 0 ?
-
                     (<div>
                         {
                             user.map(
@@ -74,14 +69,10 @@ export const AllUsers = () => {
                             )
                         }
                     </div>)
-
                     :
-
                     (<Spinner animation="border" />)
-
                 }
-
             </Container>
         </div>
-    )
+    );
 }
