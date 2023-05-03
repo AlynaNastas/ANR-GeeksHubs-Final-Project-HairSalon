@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { deleteAppoint, UserAppointments } from "../../services/apiCalls";
 import { userData } from "../../userSlice";
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/esm/Card';
 import Button from "react-bootstrap/esm/Button";
-import A17 from "../../assets/A17.jpeg"
-import Row from "react-bootstrap/esm/Row";
+
 
 export const UserAppoint = () => {
 
@@ -16,9 +15,6 @@ export const UserAppoint = () => {
     const RdxCredentials = useSelector(userData);
 
 
-
-
-    const dispatch = useDispatch();
     const navigate = useNavigate();
 
 
@@ -35,7 +31,7 @@ export const UserAppoint = () => {
         }
 
     }, [])
- 
+
 
     const selected = (unique) => {
 
@@ -48,16 +44,12 @@ export const UserAppoint = () => {
     return (
         <div>
             <Container className="simpleFont">
-
                 {user.length > 0 ?
-
                     (<div>
                         {
                             user.map(
                                 unique => {
-
                                     return (
-
                                         <>
                                             <Container className="blackFont container-fluid mt-5 mb-5 text-center">
                                                 <Card>
@@ -68,7 +60,7 @@ export const UserAppoint = () => {
                                                         <Card.Title>Date:&nbsp; {unique?.date} </Card.Title>
                                                         <Card.Title>Treatment name:&nbsp; {unique?.Service?.name} </Card.Title>
                                                         <Card.Title>Price:&nbsp; {unique?.Service?.price} £ </Card.Title>
-                                                        <Button onClick={()=>selected(unique)} variant="light">Delete</Button>{' '}
+                                                        <Button onClick={() => selected(unique)} variant="light">Delete</Button>{' '}
                                                     </Card.Body>
                                                 </Card>
                                             </Container>
@@ -78,14 +70,10 @@ export const UserAppoint = () => {
                             )
                         }
                     </div>)
-
                     :
-
-                    (<div>Appointments not found</div>)
-
+                    (<div className="blackFont">Appointments not found</div>)
                 }
-
             </Container>
         </div>
-    )
+    );
 }
