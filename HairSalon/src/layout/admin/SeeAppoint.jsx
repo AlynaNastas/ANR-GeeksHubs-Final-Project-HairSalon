@@ -36,7 +36,6 @@ export const SeeAppoint = () => {
     }, [appointments])
 
     const selected = (app2) => {
-        console.log(app2)
         deleteAppointAdmin(app2.id, credentialRdx.credentials.token)
 
         setTimeout(() => {

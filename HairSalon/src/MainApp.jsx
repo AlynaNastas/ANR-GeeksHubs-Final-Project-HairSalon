@@ -16,6 +16,7 @@ import { Team } from "./layout/Team";
 import { Services } from "./layout/Services";
 import { Treatments } from "./layout/Treatments";
 import { Reviews } from "./layout/Reviews";
+import { Ourhistry } from "./layout/Ourhistry";
 
 
 
@@ -40,6 +41,7 @@ export const MainApp = () => {
         <Route path='/services' element={<Services />} />
         <Route path='/treatments' element={<Treatments />} />
         <Route path='/reviews' element={<Reviews />} />
+        <Route path='/history' element={<Ourhistry />} />
       </Routes>
       <FooterPage />
     </>

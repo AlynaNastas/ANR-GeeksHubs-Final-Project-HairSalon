@@ -96,7 +96,6 @@ export const Register = () => {
             e.target.value,
             e.target.required
         );
-        console.log(validat)
 
         error = validat.message;
 

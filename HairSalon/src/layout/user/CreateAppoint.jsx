@@ -15,7 +15,6 @@ import { useNavigate } from 'react-router-dom';
 
 export const CreateAppoint = () => {
     const credentialsRdx = useSelector(userData);
-    console.log(credentialsRdx.credentials.usuario)
 
 
     const navigate = useNavigate();

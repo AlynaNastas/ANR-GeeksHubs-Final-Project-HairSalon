@@ -52,17 +52,11 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/services">
                                     Services
                                 </NavDropdown.Item>
-                                <NavDropdown.Item >
+                                <NavDropdown.Item as={Link} to="/history">
                                     Our History
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.6">
-                                    News
                                 </NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
-                                    Contact
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </>
@@ -102,17 +96,11 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/services">
                                     Services
                                 </NavDropdown.Item>
-                                <NavDropdown.Item >
+                                <NavDropdown.Item  as={Link} to="/history">
                                     Our History
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.6">
-                                    News
                                 </NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
-                                    Contact
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </>
@@ -155,17 +143,11 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/services">
                                     Services
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.5">
+                                <NavDropdown.Item as={Link} to="/history">
                                     Our History
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.6">
-                                    News
                                 </NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
-                                    Contact
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </>
@@ -211,19 +193,12 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/services">
                                     Services
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.5">
+                                <NavDropdown.Item as={Link} to="/history">
                                     Our History
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.6">
-                                    News
                                 </NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/reviews">
                                     Reviews
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.7">
-                                    Contact
-                                </NavDropdown.Item>
-
                             </NavDropdown>
                         </>
                         <Navbar className="home">Hi, {dataCredentialsRdx.credentials.usuario.name}!</Navbar>
