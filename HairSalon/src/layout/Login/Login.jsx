@@ -19,7 +19,6 @@ import './Login.css';
 export const Login = () => {
 
     const credentialsRdx = useSelector(userData);
-    console.log(credentialsRdx)
 
     const navigate = useNavigate();
 
@@ -59,7 +58,6 @@ export const Login = () => {
 
     useEffect(() => {
 
-        console.log(credentials)
         for (let error in credentialsError) {
             if (credentialsError[error] !== "") {
                 setLoginAct(false);
@@ -124,7 +122,6 @@ export const Login = () => {
             .then(
                 respuesta => {
                     let decodificado = decodeToken(respuesta.data)
-                    console.log(respuesta.data, 'hey hey')
                     let datosBackend = {
                         token: respuesta.data,
                         usuario: decodificado
