@@ -59,14 +59,10 @@ Node provides the RESTful API, React provides the frontend and accesses the API,
 > I would like to keep working on progress to update and create new functionalities for this app.
 
 
+## About developing the project 📝
 
 
-
-
-
-
-
-
+![work](https://user-images.githubusercontent.com/121962750/236250463-e32591e5-48be-4a33-ab9f-e90358005191.jpeg)
 
 
 
@@ -86,14 +82,16 @@ Node provides the RESTful API, React provides the frontend and accesses the API,
 
 
 
-## Issues and solutions
+## Issues, solutions and future functionalities 📆 :pushpin:
 
-   - Issue: I can not bring Stylist name to the front end.
+   1. Issue: I can not bring Stylist name to the front end.
+        - Solution: I would need to bring data through different tables doing "joins" between the tables.
 
-   - Solution: I would need to bring data through different tables doing "joins" between the tables.
+   2. Issue: Slot time date picker not functional choosing the time, I do not have the available time implemented.
+        - Solution: I would need to install React Day Time Picker.
 
-
-
+   3. Issue: As an Admin I can´t delete/update users, roles.
+         - Solution: I have those endpoints in the backend now we will work on them as future functionalities to be emplemented in this project.
 
 
 
