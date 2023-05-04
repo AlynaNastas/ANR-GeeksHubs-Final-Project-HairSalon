@@ -61,8 +61,7 @@ Node provides the RESTful API, React provides the frontend and accesses the API,
 
 ## About developing the project 📝
 
-
-![work](https://user-images.githubusercontent.com/121962750/236250463-e32591e5-48be-4a33-ab9f-e90358005191.jpeg)
+![work1](https://user-images.githubusercontent.com/121962750/236254527-859ec8da-5747-466a-a82b-030147706399.jpeg)
 
 
 
@@ -111,6 +110,47 @@ Node provides the RESTful API, React provides the frontend and accesses the API,
    - redux-persist: 6.0.0
    - redux-thunk: 2.4.2
 
+
+## Screenshots 💻
+
+# HOME page
+
+![Home1](https://user-images.githubusercontent.com/121962750/236256172-b1b23f01-ae62-41fd-8e05-53d2d22d82ab.png)
+
+# LOGIN page
+![login](https://user-images.githubusercontent.com/121962750/236256642-a6a01bca-ca35-4e2f-b3ef-6f5b99e9d183.png)
+
+
+# TEAM page
+
+![eam1](https://user-images.githubusercontent.com/121962750/236256450-0e6b737a-1520-410c-bbcc-eb92c91437ef.png)
+![loreal1](https://user-images.githubusercontent.com/121962750/236256476-29f58238-6496-484e-b215-225053223122.png)
+
+# TREATMENTS page
+
+![treatments1](https://user-images.githubusercontent.com/121962750/236256794-57c7a1fb-5a48-4a6f-81c2-f94423d5b393.png)
+
+# SERVICES page
+
+![services1](https://user-images.githubusercontent.com/121962750/236256877-7e2b3d85-5898-4b13-b24f-6aad9ebc5022.png)
+
+# REVIEWS page 
+
+![reviews](https://user-images.githubusercontent.com/121962750/236256949-4cff8d93-4453-4d66-8885-e7c78055f049.png)
+
+# Responsive :iphone:
+
+![nexus 5 1](https://user-images.githubusercontent.com/121962750/236257223-b32fb849-345c-45b2-a91a-bb5ccdb78eb0.png)
+![nexus 5 2](https://user-images.githubusercontent.com/121962750/236257242-453b28e6-1b00-4261-a007-e45369268a54.png)
+![nexus 5 3](https://user-images.githubusercontent.com/121962750/236257281-050c83e3-b22d-4b23-a5e5-36d7d3f471b2.png)
+![nexus 5 4](https://user-images.githubusercontent.com/121962750/236257318-4c2e1653-7509-4f33-9364-6efd9324347c.png)
+
+
+# Logged USER
+
+![user functions](https://user-images.githubusercontent.com/121962750/236257519-96c78649-1c3e-4fcf-8e08-d44b90044747.png)
+![user profile](https://user-images.githubusercontent.com/121962750/236257473-ece9e06f-cd28-4717-bdf6-d153b3c1b4bf.png)
+![user get app](https://user-images.githubusercontent.com/121962750/236257584-1a55988f-5d21-4ace-9e1e-20714708c119.png)
 
 
 
