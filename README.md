@@ -151,6 +151,8 @@ Node provides the RESTful API, React provides the frontend and accesses the API,
 ![user functions](https://user-images.githubusercontent.com/121962750/236257519-96c78649-1c3e-4fcf-8e08-d44b90044747.png)
 ![user profile](https://user-images.githubusercontent.com/121962750/236257473-ece9e06f-cd28-4717-bdf6-d153b3c1b4bf.png)
 ![user get app](https://user-images.githubusercontent.com/121962750/236257584-1a55988f-5d21-4ace-9e1e-20714708c119.png)
+![delete app](https://user-images.githubusercontent.com/121962750/236258155-3cc89683-9232-4f89-9f00-b63a6a9f72df.png)
+
 
 
 
