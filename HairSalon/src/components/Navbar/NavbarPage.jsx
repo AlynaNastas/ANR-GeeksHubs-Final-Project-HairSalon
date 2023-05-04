@@ -99,10 +99,10 @@ export const NavbarPage = () => {
                                 <NavDropdown.Item as={Link} to="/treatments">
                                     Treatments
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">
+                                <NavDropdown.Item as={Link} to="/services">
                                     Services
                                 </NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/services">
+                                <NavDropdown.Item >
                                     Our History
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.6">

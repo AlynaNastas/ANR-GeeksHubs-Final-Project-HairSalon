@@ -47,7 +47,7 @@ export const Home = () => {
             ensuring every single guest leaves looking authentically beautiful.</p>
             <Figure>
             <Figure.Image
-              width={600}
+              width={680}
               height={180}
               alt="300x300"
               src={A11}
@@ -98,7 +98,7 @@ export const Home = () => {
             <p>It’s this time of year when we start to think about what we could do with our hair the following year! Enter Creative Director, Giota Chiamakioti!</p>
             <Figure>
             <Figure.Image
-              width={600}
+              width={710}
               height={180}
               alt="300x300"
               src={A16}
