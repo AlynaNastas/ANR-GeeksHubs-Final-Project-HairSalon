@@ -116,7 +116,6 @@ export const Register = () => {
 
         registUser(credentials)
             .then((results) => {
-                console.log(results)
                 setTimeout(() => {
                     navigate('/login');
                 }, 2000);

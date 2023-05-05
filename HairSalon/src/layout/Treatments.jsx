@@ -51,9 +51,6 @@ export const Treatments = () => {
                 </Carousel>
             </div>
 
-
-
-
             <Container className="mt-5">
                 <Row>
                     <Col className="simpleFont mt-5">
@@ -72,7 +69,6 @@ export const Treatments = () => {
                             £55, and can take anywhere from no extra time to 30 minutes.
                         </p>
                     </Col>
-
                 </Row>
 
                 <div className=" d-flex gap-5  mt-5">
@@ -93,7 +89,6 @@ export const Treatments = () => {
                                 <li>Targets the keratin chains and bonds</li>
                                 <li>Patented peptide treatment that works whilst colouring</li>
                             </ul>
-
                         </Col>
                     </Figure>
 
@@ -118,7 +113,6 @@ export const Treatments = () => {
                         </Col>
                     </Figure>
                 </div>
-
 
                 <div className=" d-flex gap-5  mt-5 mb-5">
                     <Figure>
