@@ -62,6 +62,5 @@ export const Ourhistry = () => {
                 </Row>
             </div>
         </Container>
-
     );
 }
